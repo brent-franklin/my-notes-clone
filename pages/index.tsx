@@ -1,9 +1,23 @@
-import type { NextPage } from 'next';
+import type { GetStaticProps, GetStaticPropsContext, GetStaticPropsResult, NextPage } from 'next';
 import Head from 'next/head';
-import Image from 'next/image';
-import styles from '../styles/Home.module.css';
 
-const Home: NextPage = () => {
+// Components found in :rootDir/components
+import UtilityBar from '@/components/UtilityBar';
+import NotesApp from '@/components/NotesApp';
+import Folder from '@/components/folderComponents/Folder';
+
+// Stylesheets found in :rootDir/styles
+import styles from '@/styles/Home.module.css';
+
+export type FolderType = {
+  [name: string]: string;
+};
+
+export type NoteType = {
+  [name: string]: string;
+};
+
+const Home: NextPage = ({ folders, notes }: { folders: FolderType[]; notes: NoteType[] }) => {
   return (
     <div className={styles.container}>
       <Head>
@@ -11,11 +25,20 @@ const Home: NextPage = () => {
         <meta name="description" content="MacOS Notes Clone" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}></main>
-
-      <footer className={styles.footer}></footer>
+	  <UtilityBar />
+	  <NotesApp folders={[...folders]} notes={[...notes]}/>
     </div>
   );
+};
+
+export const getStaticProps: GetStaticProps = async (context: GetStaticPropsContext): GetStaticPropsResult<P> => {
+  const folderRes: Response = await fetch(process.env.FOLDERS_URL);
+  const folders = await folderRes.json().then((folder) => folder.folders);
+  const notesRes: Response = await fetch(process.env.NOTES_URL);
+  const notes = await notesRes.json().then((note) => note.notes);
+  return {
+    props: { folders, notes }, // will be passed to the page component as props
+  };
 };
 
 export default Home;

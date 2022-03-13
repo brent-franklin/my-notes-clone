@@ -1,0 +1,42 @@
+.frame {
+  grid-row: 2/12 span;
+  background-color: #fafafa;
+}
+
+#folders {
+  display: grid;
+  height: 100%;
+  padding: 0 2rem;
+  grid-template-areas:
+    "header"
+    "folder"
+    "folder"
+    "folder"
+    "folder"
+    "folder"
+    "folder"
+    "folder"
+    "folder"
+    "folder"
+    "folder"
+    "folder"
+    "newFolderBtn";
+}
+
+#folders h1 {
+  grid-area: header;
+  margin: 0;
+  display: grid;
+  align-content: center;
+  font-size: 0.9rem;
+  color: #a1a1a1;
+  transform: translateX(-15px);
+}
+
+#notes {
+  display: flex;
+  height: 100%;
+  padding: 0 0 0 2rem;
+  flex-direction: column;
+}
+

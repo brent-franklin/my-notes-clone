@@ -1,0 +1,8 @@
+#utilityBar{
+  grid-column: 1/4;
+  grid-row: 1;
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(187,187,187,1) 0%, rgba(221,221,221,1) 100%);
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+}
