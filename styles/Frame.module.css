@@ -1,36 +1,35 @@
 .frame {
-  grid-row: 2/12 span;
   background-color: #fafafa;
+  flex: 1;
 }
 
-#folders {
-  display: grid;
+
+.folders {
   height: 100%;
-  padding: 0 2rem;
-  grid-template-areas:
-    "header"
-    "folder"
-    "folder"
-    "folder"
-    "folder"
-    "folder"
-    "folder"
-    "folder"
-    "folder"
-    "folder"
-    "folder"
-    "folder"
-    "newFolderBtn";
+  padding: 0 0 0 40px;
 }
 
-#folders h1 {
-  grid-area: header;
-  margin: 0;
+.folders h1 {
   display: grid;
+  height: 50px;
+  margin: 0;
   align-content: center;
   font-size: 0.9rem;
   color: #a1a1a1;
   transform: translateX(-15px);
+}
+
+.folders ul {
+  height: 75%;
+  overflow-y: auto;
+  margin: 0;
+  padding: 0;
+}
+
+
+.folders ul li {
+  height: 75px;
+  margin: 0;
 }
 
 #notes {
@@ -38,5 +37,14 @@
   height: 100%;
   padding: 0 0 0 2rem;
   flex-direction: column;
+  overflow-y: auto;
+}
+
+#note textarea {
+  height: calc(100% - 30px);
+}
+
+#hidden {
+  display: none;
 }
 

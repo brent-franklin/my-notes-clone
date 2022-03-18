@@ -1,0 +1,53 @@
+.newFolderPopup {
+  position: absolute;
+  bottom: 75px;
+  width: 300px;
+  height: 75px;
+  border-radius: 5px;
+  background-color: black;
+}
+
+.newFolderPopup input {
+  height: 75px;
+  width: 300px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.easeOut {
+  animation: folderBtnOut 250ms linear;
+  transform: translateX(-400px);
+  opactiy: 0;
+}
+
+
+.easeIn {
+  animation: folderBtnIn 250ms linear;
+  transform: translateX(0px);
+  opactiy: 1;
+}
+
+
+
+@keyframes folderBtnOut {
+  from {
+    transform: translateX(0px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(400px);
+    opacity: 1;
+  }
+}
+
+@keyframes folderBtnIn {
+  from{
+    transform: translateX(400px);
+    opactiy: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}

@@ -1,41 +1,48 @@
-import type { GetStaticProps, GetStaticPropsContext, GetStaticPropsResult, NextPage } from 'next';
+import type { GetServerSideProps, GetServerSidePropsContext, NextPage } from 'next';
+import { noteHelper } from 'db/helpers.db';
 import Head from 'next/head';
 
 // Components found in :rootDir/components
 import UtilityBar from '@/components/UtilityBar';
 import NotesApp from '@/components/NotesApp';
-import Folder from '@/components/folderComponents/Folder';
 
-// Stylesheets found in :rootDir/styles
-import styles from '@/styles/Home.module.css';
+// UtilityBar Context
+import { UtilityProvider } from '../lib/utilityContext';
 
-export type FolderType = {
-  [name: string]: string;
-};
+const Home: NextPage<{ folders: FolderType[]; notes: NoteType[] }> = ({
+  folders,
+  notes,
+}: {
+  folders: FolderType[];
+  notes: NoteType[];
+}) => (
+  <div>
+    <Head>
+      <title>My Notes Clone</title>
+      <meta name="description" content="MacOS Notes Clone" />
+      <link rel="icon" href="/favicon.ico" />
+    </Head>
+    <UtilityProvider>
+      <UtilityBar />
+      <NotesApp folders={[...folders]} notes={[...notes]} />
+    </UtilityProvider>
+  </div>
+);
 
-export type NoteType = {
-  [name: string]: string;
-};
 
-const Home: NextPage = ({ folders, notes }: { folders: FolderType[]; notes: NoteType[] }) => {
-  return (
-    <div className={styles.container}>
-      <Head>
-        <title>My Notes Clone</title>
-        <meta name="description" content="MacOS Notes Clone" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-	  <UtilityBar />
-	  <NotesApp folders={[...folders]} notes={[...notes]}/>
-    </div>
-  );
-};
-
-export const getStaticProps: GetStaticProps = async (context: GetStaticPropsContext): GetStaticPropsResult<P> => {
-  const folderRes: Response = await fetch(process.env.FOLDERS_URL);
+// This function is removed after initially run
+// It returns the initial props for the app so
+// it speeds up initial start by grabbing values beforehand
+// in this case it is grabbing the notes and folders currently in the DB
+export const getServerSideProps: GetServerSideProps = async (
+  _context: GetServerSidePropsContext
+) => {
+  const folderRes: Response = await fetch(`${process.env.NOTES_URL}/folders` as string);
   const folders = await folderRes.json().then((folder) => folder.folders);
-  const notesRes: Response = await fetch(process.env.NOTES_URL);
-  const notes = await notesRes.json().then((note) => note.notes);
+  const notesRes: Response = await fetch(`${process.env.NOTES_URL}/notes` as string);
+  const n = await notesRes.json().then((note) => note.notes);
+  const notes = noteHelper(n);
+
   return {
     props: { folders, notes }, // will be passed to the page component as props
   };

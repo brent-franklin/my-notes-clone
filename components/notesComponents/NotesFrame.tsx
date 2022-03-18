@@ -1,13 +1,28 @@
 import styles from '@/styles/Frame.module.css';
-import { NoteType } from '../../pages/index';
+import { Dispatch, useContext } from 'react';
+import { ReducerContext } from '../NotesApp';
 import NoteCard from './NoteCard';
 
-const NotesFrame = ({ section, notes }: { section: string, notes: NoteType[] }): JSX.Element => {
+const NotesFrame = ({
+  section,
+  dispatch,
+}: {
+  section: string;
+  dispatch: Dispatch<ActionType>;
+}): JSX.Element => {
+  // This section allows access to the reducer variables
+  // notes = NoteType[], emptyNote = NoteType[]
+  const reducedContext = useContext(ReducerContext);
+    const { notes, emptyNote, selectedFolder } = reducedContext as ReducedType;
+
+  // Combine notes and empty note to display on screen together
+  const noteList = [emptyNote, ...notes];
+
   return (
     <section id={styles[section]} className={styles.frame}>
-	{notes.map((n: NoteType) => (
-          <NoteCard key={n.timecreated} msg={n} />
-        ))}
+	  {noteList.filter((n:NoteType)=> n.folderName === selectedFolder || n.folderName === "").map((n: NoteType, i: number) => {
+        return <NoteCard id={i} key={n.timeCreated ?? 'newNote'} note={n} dispatch={dispatch} />;
+      })}
     </section>
   );
 };

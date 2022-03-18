@@ -1,5 +1,23 @@
 #noteForm{
-  width: 100%;
   height: 100%;
+  width: 100%;
+  padding: 10px;
   border: none;
+}
+
+#noteHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#noteHeader time {
+  font-weight: bold;
+  color: #c3c3c3;
+}
+
+#noteHeader span {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #c3c3c3;
 }

@@ -42,7 +42,7 @@ CREATE TABLE notes (
 INSERT INTO notes
        (content, timeCreated, folderName)
 VALUES
-	(E'Camilla and Bob anniversary\nCall 4-5 days ahead of party reservation and invite them to restaurant', (CURRENT_TIMESTAMP - INTERVAL '1' HOUR), 'Notes'),
-	(E'Kitchen Model Ideas Romano\nwants white marble or granite counter tops for his design',(CURRENT_TIMESTAMP - INTERVAL '2' HOUR), 'Notes'),
-	(E'Romano Contractor Notes\nThe inspector will visit Thursday. Check progress before inspection',(CURRENT_TIMESTAMP - INTERVAL '3' HOUR), 'Notes'),
-	(E'Romano birthday getaway\nideas Los Angeles. Napa. Baja. Yosemite?',(CURRENT_TIMESTAMP - INTERVAL '4' HOUR), 'Notes');
+	(E'Camilla and Bob anniversary\nCall 4-5 days ahead of party reservation and invite them to restaurant', (CURRENT_TIMESTAMP - INTERVAL '4' HOUR), 'Notes'),
+	(E'Kitchen Model Ideas Romano\nwants white marble or granite counter tops for his design',(CURRENT_TIMESTAMP - INTERVAL '3' HOUR), 'Notes'),
+	(E'Romano Contractor Notes\nThe inspector will visit Thursday. Check progress before inspection',(CURRENT_TIMESTAMP - INTERVAL '2' HOUR), 'Notes'),
+	(E'Romano birthday getaway\nideas Los Angeles. Napa. Baja. Yosemite?',(CURRENT_TIMESTAMP - INTERVAL '1' HOUR), 'Notes');

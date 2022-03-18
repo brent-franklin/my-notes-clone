@@ -1,17 +1,7 @@
-.container {
-  width: 100vw;
-  height: 100vh;
-  display: grid;
+#container {
+  display: flex;
   gap: 0 2px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(12, 1fr);
+  height: calc(100vh - 52px);
+  width: 100%;
   background: #e4e4e4;
-}
-
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
 }
