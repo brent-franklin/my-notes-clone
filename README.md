@@ -35,7 +35,7 @@ npm run dev
 yarn dev
 ```
 
-If you would liek to build and run the production server
+If you would like to build and run the production server
 ```bash
 npm run build && npm run start
 ```

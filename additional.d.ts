@@ -29,6 +29,7 @@ interface ReducedType {
   folders: FolderType[];
   notes: NoteType[];
   emptyNote: NoteType;
+  edited: number[]
 }
 
 type ActionType = {
@@ -41,4 +42,5 @@ interface UtilityState {
   deleteNote: boolean;
   toggleNewNote: boolean;
   toggleNewFolder: boolean;
+  searchInput: string;
 }

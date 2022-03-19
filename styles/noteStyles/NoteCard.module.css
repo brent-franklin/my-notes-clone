@@ -40,6 +40,10 @@
   display: none;
 }
 
+.show {
+  display: block;
+}
+
 .noteCard h2,
 .noteCard div,
 .noteCard div time,
@@ -50,5 +54,15 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+.alert{
+  display: block;
+  position: absolute;
+  right: 10px;
+}
+
+.noAlert {
+  display: none;
 }
 

@@ -6,6 +6,7 @@ const utilityState: UtilityState = {
   deleteNote: false,
   toggleNewNote: true,
   toggleNewFolder: false,
+  searchInput: '',
 };
 
 // Create new context for the utilitybar to pass to other components

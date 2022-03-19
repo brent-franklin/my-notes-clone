@@ -10,7 +10,8 @@ const NewFolderPopup = ({ dispatch }: { dispatch: Dispatch<ActionType> }): JSX.E
       {toggleFolders: boolean,
        deleteNote: boolean,
        toggleNewNote: boolean,
-       toggleNewFolder: boolean} = utilties
+       toggleNewFolder: boolean,
+       searchInput: string} = utilties
     */
   const utilityContext = useContext(UtilityContext);
   const [utilities, _] = utilityContext as [UtilityState, Dispatch<SetStateAction<UtilityState>>];
@@ -41,7 +42,7 @@ const NewFolderPopup = ({ dispatch }: { dispatch: Dispatch<ActionType> }): JSX.E
 
   // This section autofocuses the user to the new folder input
   // when the button is clicked so the user can start typing immediately
-  const toggleFolder = utilities.toggleNewFolder ? styles.easeIn : styles.easeOut;
+  const toggleFolder = utilities.toggleNewFolder ? styles.show : styles.hide;
   const autoFocusInput = useRef(null);
   useEffect(() => {
     // reset the value whenever the input shows on the screen
@@ -56,7 +57,7 @@ const NewFolderPopup = ({ dispatch }: { dispatch: Dispatch<ActionType> }): JSX.E
     <aside className={`${styles.newFolderPopup} ${toggleFolder}`}>
       <input
         ref={autoFocusInput}
-        placeholder="New Folder"
+      placeholder="New Folder"
         onChange={handleInput}
         onKeyDown={handleCreateFolder}
         value={input}

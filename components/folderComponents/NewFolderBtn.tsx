@@ -9,7 +9,8 @@ const NewFolderBtn = (): JSX.Element => {
       {toggleFolders: boolean,
        deleteNote: boolean,
        toggleNewNote: boolean,
-       toggleNewFolder: boolean} = utilties
+       toggleNewFolder: boolean,
+       searchInput: string} = utilties
     */
   const utilityContext = useContext(UtilityContext);
   const [utilities, setUtilities] = utilityContext as [

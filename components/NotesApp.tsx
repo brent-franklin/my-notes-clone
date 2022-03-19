@@ -8,6 +8,7 @@ import {
   useRef,
   useEffect,
   useState,
+  useMemo,
 } from 'react';
 
 // lib
@@ -35,6 +36,20 @@ const NotesApp = ({
   folders: FolderType[];
   notes: NoteType[];
 }): JSX.Element => {
+  //This seciton allows access to the utilitybar variables
+  /*
+      {toggleFolders: boolean,
+       deleteNote: boolean,
+       toggleNewNote: boolean,
+       toggleNewFolder: boolean,
+       searchInput: string} = utilties
+    */
+  const utilityContext = useContext(UtilityContext);
+  const [utilities, setUtilities] = utilityContext as [
+    UtilityState,
+    Dispatch<SetStateAction<UtilityState>>
+  ];
+
   // The object inside of the useReducer hook that manages state
   const initialState: ReducedType = {
     folders,
@@ -42,6 +57,7 @@ const NotesApp = ({
     notes: notes,
     emptyNote: emptyNote,
     selectedNote: notes[0],
+    edited: [0],
   };
 
   // This is the instantiation of the useReducer hook
@@ -51,19 +67,6 @@ const NotesApp = ({
 
   // This hook manages the input value of the TextArea
   const [textAreaState, setTextAreaState] = useState(state.selectedNote?.content);
-
-  //This seciton allows access to the utilitybar variables
-  /*
-      {toggleFolders: boolean,
-       deleteNote: boolean,
-       toggleNewNote: boolean,
-       toggleNewFolder: boolean} = utilties
-    */
-  const utilityContext = useContext(UtilityContext);
-  const [utilities, setUtilities] = utilityContext as [
-    UtilityState,
-    Dispatch<SetStateAction<UtilityState>>
-  ];
 
   useEffect(() => {
     setTextAreaState(state.selectedNote?.content);
@@ -77,13 +80,10 @@ const NotesApp = ({
   // the pispatch reducer function to update the UI and delete the note
   useEffect(() => {
     if (ref.current) {
-      const deleteNote = async () => await deleteNoteDB(selectedNote);
-      deleteNote();
       dispatch({ type: ACTION.DELETE_NOTE, payload: null });
       // If the length of the note list is 1
       // that means there is only an empty not and the
       // TextArea is reset to an empty value
-      if (state.notes.length === 1) setTextAreaState('');
     }
     ref.current = true;
   }, [utilities.deleteNote]);
@@ -112,7 +112,7 @@ const NotesApp = ({
       if (selectedNote.id === null) {
         const newNote: NoteType[] = await newNoteDB(textAreaState, state.selectedFolder);
         dispatch({ type: ACTION.CREATE_NOTE, payload: { newNote } });
-        setUtilities({ ...utilities, toggleNewNote: !utilities.toggleNewNote });
+        setUtilities({ ...utilities, toggleNewNote: true });
       } else {
         const updatedNote: NoteType[] = await updateNoteDB(textAreaState, selectedNote);
         dispatch({ type: ACTION.UPDATE_NOTE, payload: { updatedNote } });
@@ -133,6 +133,7 @@ const NotesApp = ({
     (autoFocusTextArea?.current as unknown as HTMLTextAreaElement)?.setSelectionRange(-1, -1);
     (autoFocusTextArea?.current as unknown as HTMLTextAreaElement)?.focus();
   }, [autoFocusTextArea, textAreaState]);
+
 
   return (
     <main id={home.container}>

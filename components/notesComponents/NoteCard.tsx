@@ -14,11 +14,24 @@ const NoteCard = ({
   note: NoteType;
   dispatch: Dispatch<ActionType>;
 }): JSX.Element => {
+  // This section allows access to the reducer variables
+  // selectedNote = NoteType[]
   const reducedContext = useContext(ReducerContext);
-  const { selectedNote } = reducedContext as ReducedType;
+    const { selectedNote, edited, notes } = reducedContext as ReducedType;
 
+  //This seciton allows access to the utilitybar variables
+  /*
+      {toggleFolders: boolean,
+       deleteNote: boolean,
+       toggleNewNote: boolean,
+       toggleNewFolder: boolean,
+       searchInput: string} = utilties
+    */
   const utilityContext = useContext(UtilityContext);
-  const [utilities, _] = utilityContext as [UtilityState, Dispatch<SetStateAction<UtilityState>>];
+  const [utilities, _] = utilityContext as [
+    UtilityState,
+    Dispatch<SetStateAction<UtilityState>>
+  ];
 
   /* This is to split the content up so that the first new line
    * is seen as the header in the note card if content is empty then
@@ -48,37 +61,45 @@ const NoteCard = ({
   // Add style to darken background of selected note
   const select = selectedNote?.id === note.id ? styles.selected : null;
   // If the newNote utility button is pressed then the new note shows in the note section
-  const toggleNote = utilities.toggleNewNote && !note.id ? styles.hidden : null;
+    const toggleNote = utilities.toggleNewNote && !note.id ? styles.hidden : null;
+    const emptyList = notes.length === 0 ? styles.show : null;
 
   // This ref is used to skip the first useEffect hook firing event
   const toggleFocus = useRef(false);
   useEffect(() => {
-    // if the ref.current is true then change focus to new note
-    // if toggle is off then change selected note to most recent note
+    // If the ref.current is true then change focus to new note
+    // If toggle is off then change selected note to most recent note
     if (toggleFocus.current) {
-      const selectNote = utilities.toggleNewNote ? 1 : id;
+	const selectNote = utilities.toggleNewNote ? 1 : id;
       dispatch({ type: ACTION.CHANGE_SELECTED_NOTE, payload: { selectedNote: selectNote } });
     }
-    // this allows the useEffect to fire after skipping the first firing event
+    // This allows the useEffect to fire after skipping the first firing event
     toggleFocus.current = true;
   }, [toggleNote]);
+
+  // If the note body is over 50 characters return body else truncate and return with ellipses "..."
+  const noteBody = body.join('').length > 65 ? `${body.join('').slice(0, 65)}...` : body.join('');
+
+  // Alert for altered but unsaved notes
+  const alert = !edited.includes(note.id as number) ? styles.noAlert : styles.alert;
 
   return (
     <article
       data-reactid={id}
       data-dbid={note.id}
-      className={`${styles.noteCard} ${select} ${toggleNote}`}
+      className={`${styles.noteCard} ${select} ${toggleNote} ${emptyList}`}
       onClick={handleSelectedNote}
     >
       <h2>{header ? header : 'New Note'}</h2>
       <div>
         <time>{timeModified}</time>
-        <p>{body}</p>
+        <p>{noteBody}</p>
       </div>
       <div>
         <Image src="/folder.svg" width="15px" height="15px" alt="Folder Icon" />
         <span>{note.folderName}</span>
       </div>
+      <aside className={alert}>Not Saved</aside>
     </article>
   );
 };
