@@ -22,7 +22,7 @@ cd ./my-notes-clone
 npm install
 ```
 
-When inside home folder, populate the database with initial values run:
+When inside home folder, populate the database with initial values by running:
 ```bash
 psql < ./db/my-notes-clone.pgsql
 ```
@@ -31,8 +31,6 @@ First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
 If you would like to build and run the production server
