@@ -1,7 +1,7 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 ## Getting Started
 
-This application was created using NextJS and and PostgreSQL.
+This application was created using NextJS and PostgreSQL.
 This guide assumes that you already have NPM and PostgreSQL installed on your system.
 
 To download and start the application please run the following commands below;
