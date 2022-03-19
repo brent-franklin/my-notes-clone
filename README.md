@@ -22,7 +22,7 @@ cd ./my-notes-clone
 npm install
 ```
 
-To populate the database with initial values run:
+When inside home folder, populate the database with initial values run:
 ```bash
 psql < ./db/my-notes-clone.pgsql
 ```
