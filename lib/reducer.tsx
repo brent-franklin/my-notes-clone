@@ -1,5 +1,4 @@
 import { deleteNoteDB } from '@/db/helpers.db';
-import { useMemo } from 'react';
 
 // These are all of the decided actions available in the useReducer hook
 export const ACTION = {

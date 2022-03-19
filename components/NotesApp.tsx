@@ -8,14 +8,13 @@ import {
   useRef,
   useEffect,
   useState,
-  useMemo,
 } from 'react';
 
 // lib
 import { ACTION, emptyNote, reducer } from '../lib/reducer';
 
 // Database Helper Functions
-import { deleteNoteDB, newNoteDB, updateNoteDB } from 'db/helpers.db';
+import { newNoteDB, updateNoteDB } from 'db/helpers.db';
 
 // Components
 import Frame from './Frame';
