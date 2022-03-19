@@ -32,7 +32,7 @@ const NewFolderPopup = ({ dispatch }: { dispatch: Dispatch<ActionType> }): JSX.E
   // passed to the dispatch reducer function to update the UI
   // Shift + Enter is how the user saves the folder to the DB
   const handleCreateFolder = async (evt: React.KeyboardEvent) => {
-    if (evt.shiftKey && evt.key === 'Enter') {
+    if (evt.key === 'Enter') {
       evt.preventDefault();
       const newFolder: FolderType[] = await newFolderDB(input);
       dispatch({ type: ACTION.CREATE_FOLDER, payload: newFolder });
@@ -57,7 +57,7 @@ const NewFolderPopup = ({ dispatch }: { dispatch: Dispatch<ActionType> }): JSX.E
     <aside className={`${styles.newFolderPopup} ${toggleFolder}`}>
       <input
         ref={autoFocusInput}
-      placeholder="New Folder"
+      placeholder="New Folder: Enter to Save"
         onChange={handleInput}
         onKeyDown={handleCreateFolder}
         value={input}
