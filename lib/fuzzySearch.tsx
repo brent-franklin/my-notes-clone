@@ -14,12 +14,10 @@ const fuzzySearch = (input: string, note: NoteType): boolean => {
   search: for (let i = 0; i < input.length; i++) {
     // Grab character to match the note content
     let char;
-    if (typeof parseInt(input[i]) === 'number' ) char = input.charCodeAt(i);
     if (typeof input[i] === 'string') char = input.toLowerCase().charCodeAt(i);
     // While j is less than content length continue search
     for (let j = 0; j < nContent.length; j++) {
       let noteChar;
-	if (typeof parseInt(nContent[j]) === 'number') noteChar = nContent.charCodeAt(j+1);
       if (typeof nContent[j] === 'string') noteChar = nContent.toLowerCase().charCodeAt(j+1);
       // Increment j and use to check content char against input char
       if (noteChar === char) {
