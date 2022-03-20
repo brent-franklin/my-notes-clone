@@ -10,18 +10,18 @@ const fuzzySearch = (input: string, note: NoteType): boolean => {
   // If the input length is equal to the note content length
   // return true if the content matches, else return false
   if (input.length === nContent.length) return input === nContent;
-  // Label for loop to break out of while loop and continue search
+    // Label for loop to break out of while loop and continue search
+    let k = 0;
   search: for (let i = 0; i < input.length; i++) {
     // Grab character to match the note content
-    let char;
-    if (typeof input[i] === 'string') char = input.toLowerCase().charCodeAt(i);
+    const char = input.toLowerCase().charCodeAt(i);
     // While j is less than content length continue search
-    for (let j = 0; j < nContent.length; j++) {
-      let noteChar;
-      if (typeof nContent[j] === 'string') noteChar = nContent.toLowerCase().charCodeAt(j+1);
+    for (let j = k; j < nContent.length; j++) {
+	const noteChar = nContent.toLowerCase().charCodeAt(j);
       // Increment j and use to check content char against input char
       if (noteChar === char) {
         // If character matches break out and continue searching
+	  k = j;
         continue search;
       }
     }
