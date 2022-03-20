@@ -64,19 +64,6 @@ const NoteCard = ({
     const toggleNote = utilities.toggleNewNote && !note.id ? styles.hidden : null;
     const emptyList = notes.length === 0 ? styles.show : null;
 
-  // This ref is used to skip the first useEffect hook firing event
-  const toggleFocus = useRef(false);
-  useEffect(() => {
-    // If the ref.current is true then change focus to new note
-    // If toggle is off then change selected note to most recent note
-    if (toggleFocus.current) {
-	const selectNote = utilities.toggleNewNote ? 1 : id;
-      dispatch({ type: ACTION.CHANGE_SELECTED_NOTE, payload: { selectedNote: selectNote } });
-    }
-    // This allows the useEffect to fire after skipping the first firing event
-    toggleFocus.current = true;
-  }, [toggleNote]);
-
   // If the note body is over 50 characters return body else truncate and return with ellipses "..."
   const noteBody = body.join('').length > 65 ? `${body.join('').slice(0, 65)}...` : body.join('');
 
