@@ -2410,3 +2410,252 @@ Info 2345 [20:47:32.589] Different program with same set of files
 Info 2346 [20:47:34.411] Starting updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json
 Info 2347 [20:47:34.429] Finishing updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json Version: 255 structureChanged: false structureIsReused:: Completely Elapsed: 18.12855902314186ms
 Info 2348 [20:47:34.430] Different program with same set of files
+Info 2349 [20:53:17.618] Starting updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json
+Info 2350 [20:53:17.631] Finishing updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json Version: 256 structureChanged: false structureIsReused:: Completely Elapsed: 13.101730018854141ms
+Info 2351 [20:53:17.631] Different program with same set of files
+Info 2352 [20:53:22.856] Starting updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json
+Info 2353 [20:53:22.868] Finishing updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json Version: 257 structureChanged: false structureIsReused:: Completely Elapsed: 11.540731996297836ms
+Info 2354 [20:53:22.868] Different program with same set of files
+Info 2355 [20:53:23.159] Starting updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json
+Info 2356 [20:53:23.166] Finishing updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json Version: 258 structureChanged: false structureIsReused:: Completely Elapsed: 6.755235999822617ms
+Info 2357 [20:53:23.166] Different program with same set of files
+Info 2358 [20:53:23.166] getCompletionData: Get current token: 0.01658502221107483
+Info 2359 [20:53:23.166] getCompletionData: Is inside comment: 0.04160499572753906
+Info 2360 [20:53:23.166] Returning an empty list because completion was inside a regular comment or plain text part of a JsDoc comment.
+Info 2361 [20:53:23.171] getCompletionData: Get current token: 0.013691991567611694
+Info 2362 [20:53:23.171] getCompletionData: Is inside comment: 0.04299801588058472
+Info 2363 [20:53:23.171] Returning an empty list because completion was inside a regular comment or plain text part of a JsDoc comment.
+Info 2364 [20:53:23.221] Starting updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json
+Info 2365 [20:53:23.226] Finishing updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json Version: 259 structureChanged: false structureIsReused:: Completely Elapsed: 4.588903993368149ms
+Info 2366 [20:53:23.226] Different program with same set of files
+Info 2367 [20:53:23.227] getCompletionData: Get current token: 0.01173698902130127
+Info 2368 [20:53:23.227] getCompletionData: Is inside comment: 0.031343013048172
+Info 2369 [20:53:23.227] Returning an empty list because completion was inside a regular comment or plain text part of a JsDoc comment.
+Info 2370 [20:53:23.230] getCompletionData: Get current token: 0.01048898696899414
+Info 2371 [20:53:23.230] getCompletionData: Is inside comment: 0.03136700391769409
+Info 2372 [20:53:23.230] Returning an empty list because completion was inside a regular comment or plain text part of a JsDoc comment.
+Info 2373 [20:53:26.507] Starting updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json
+Info 2374 [20:53:26.514] Finishing updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json Version: 260 structureChanged: false structureIsReused:: Completely Elapsed: 6.561592012643814ms
+Info 2375 [20:53:26.516] Different program with same set of files
+Info 2376 [20:53:26.516] getCompletionData: Get current token: 0.02778598666191101
+Info 2377 [20:53:26.516] getCompletionData: Is inside comment: 0.04686298966407776
+Info 2378 [20:53:26.516] Returning an empty list because completion was inside a regular comment or plain text part of a JsDoc comment.
+Info 2379 [20:53:26.518] getCompletionData: Get current token: 0.013696998357772827
+Info 2380 [20:53:26.518] getCompletionData: Is inside comment: 0.03951001167297363
+Info 2381 [20:53:26.518] Returning an empty list because completion was inside a regular comment or plain text part of a JsDoc comment.
+Info 2382 [20:53:26.622] Starting updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json
+Info 2383 [20:53:26.627] Finishing updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json Version: 261 structureChanged: false structureIsReused:: Completely Elapsed: 5.565720975399017ms
+Info 2384 [20:53:26.627] Different program with same set of files
+Info 2385 [20:53:26.628] getCompletionData: Get current token: 0.011191993951797485
+Info 2386 [20:53:26.628] getCompletionData: Is inside comment: 0.03387400507926941
+Info 2387 [20:53:26.628] Returning an empty list because completion was inside a regular comment or plain text part of a JsDoc comment.
+Info 2388 [20:53:26.629] getCompletionData: Get current token: 0.009903013706207275
+Info 2389 [20:53:26.629] getCompletionData: Is inside comment: 0.032893985509872437
+Info 2390 [20:53:26.629] Returning an empty list because completion was inside a regular comment or plain text part of a JsDoc comment.
+Info 2391 [20:53:26.666] Starting updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json
+Info 2392 [20:53:26.671] Finishing updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json Version: 262 structureChanged: false structureIsReused:: Completely Elapsed: 5.207262992858887ms
+Info 2393 [20:53:26.671] Different program with same set of files
+Info 2394 [20:53:26.672] getCompletionData: Get current token: 0.01064300537109375
+Info 2395 [20:53:26.672] getCompletionData: Is inside comment: 0.029884010553359985
+Info 2396 [20:53:26.672] Returning an empty list because completion was inside a regular comment or plain text part of a JsDoc comment.
+Info 2397 [20:53:26.673] getCompletionData: Get current token: 0.0099869966506958
+Info 2398 [20:53:26.673] getCompletionData: Is inside comment: 0.03041902184486389
+Info 2399 [20:53:26.673] Returning an empty list because completion was inside a regular comment or plain text part of a JsDoc comment.
+Info 2400 [20:53:26.774] Starting updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json
+Info 2401 [20:53:26.780] Finishing updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json Version: 263 structureChanged: false structureIsReused:: Completely Elapsed: 6.244354993104935ms
+Info 2402 [20:53:26.780] Different program with same set of files
+Info 2403 [20:53:26.780] getCompletionData: Get current token: 0.01063200831413269
+Info 2404 [20:53:26.780] getCompletionData: Is inside comment: 0.0340920090675354
+Info 2405 [20:53:26.780] Returning an empty list because completion was inside a regular comment or plain text part of a JsDoc comment.
+Info 2406 [20:53:26.782] getCompletionData: Get current token: 0.009696990251541138
+Info 2407 [20:53:26.782] getCompletionData: Is inside comment: 0.03159397840499878
+Info 2408 [20:53:26.782] Returning an empty list because completion was inside a regular comment or plain text part of a JsDoc comment.
+Info 2409 [20:53:26.897] Starting updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json
+Info 2410 [20:53:26.903] Finishing updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json Version: 264 structureChanged: false structureIsReused:: Completely Elapsed: 5.736764013767242ms
+Info 2411 [20:53:26.903] Different program with same set of files
+Info 2412 [20:53:26.904] getCompletionData: Get current token: 0.015049993991851807
+Info 2413 [20:53:26.904] getCompletionData: Is inside comment: 0.04352802038192749
+Info 2414 [20:53:26.904] Returning an empty list because completion was inside a regular comment or plain text part of a JsDoc comment.
+Info 2415 [20:53:26.909] getCompletionData: Get current token: 0.013698995113372803
+Info 2416 [20:53:26.909] getCompletionData: Is inside comment: 0.0425260066986084
+Info 2417 [20:53:26.909] Returning an empty list because completion was inside a regular comment or plain text part of a JsDoc comment.
+Info 2418 [20:53:27.131] Starting updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json
+Info 2419 [20:53:27.150] Finishing updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json Version: 265 structureChanged: false structureIsReused:: Completely Elapsed: 18.91252699494362ms
+Info 2420 [20:53:27.150] Different program with same set of files
+Info 2421 [20:53:28.705] Starting updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json
+Info 2422 [20:53:28.726] Finishing updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json Version: 266 structureChanged: false structureIsReused:: Completely Elapsed: 20.79034698009491ms
+Info 2423 [20:53:28.726] Different program with same set of files
+Info 2424 [20:53:29.084] Starting updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json
+Info 2425 [20:53:29.107] Finishing updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json Version: 267 structureChanged: false structureIsReused:: Completely Elapsed: 23.143067002296448ms
+Info 2426 [20:53:29.108] Different program with same set of files
+Info 2427 [20:53:29.818] Starting updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json
+Info 2428 [20:53:29.824] Finishing updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json Version: 268 structureChanged: false structureIsReused:: Completely Elapsed: 5.7266660034656525ms
+Info 2429 [20:53:29.824] Different program with same set of files
+Info 2430 [20:53:29.824] getCompletionData: Get current token: 0.012748003005981445
+Info 2431 [20:53:29.824] getCompletionData: Is inside comment: 0.03249397873878479
+Info 2432 [20:53:29.824] Returning an empty list because completion was inside a regular comment or plain text part of a JsDoc comment.
+Info 2433 [20:53:29.826] getCompletionData: Get current token: 0.009909003973007202
+Info 2434 [20:53:29.826] getCompletionData: Is inside comment: 0.03321298956871033
+Info 2435 [20:53:29.826] Returning an empty list because completion was inside a regular comment or plain text part of a JsDoc comment.
+Info 2436 [20:53:29.867] Starting updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json
+Info 2437 [20:53:29.872] Finishing updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json Version: 269 structureChanged: false structureIsReused:: Completely Elapsed: 4.7172559797763824ms
+Info 2438 [20:53:29.872] Different program with same set of files
+Info 2439 [20:53:29.872] getCompletionData: Get current token: 0.012254983186721802
+Info 2440 [20:53:29.872] getCompletionData: Is inside comment: 0.03478598594665527
+Info 2441 [20:53:29.872] Returning an empty list because completion was inside a regular comment or plain text part of a JsDoc comment.
+Info 2442 [20:53:29.874] getCompletionData: Get current token: 0.010264992713928223
+Info 2443 [20:53:29.874] getCompletionData: Is inside comment: 0.0337350070476532
+Info 2444 [20:53:29.874] Returning an empty list because completion was inside a regular comment or plain text part of a JsDoc comment.
+Info 2445 [20:53:30.046] Starting updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json
+Info 2446 [20:53:30.054] Finishing updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json Version: 270 structureChanged: false structureIsReused:: Completely Elapsed: 7.352759003639221ms
+Info 2447 [20:53:30.054] Different program with same set of files
+Info 2448 [20:53:30.054] getCompletionData: Get current token: 0.015165001153945923
+Info 2449 [20:53:30.054] getCompletionData: Is inside comment: 0.04493799805641174
+Info 2450 [20:53:30.054] Returning an empty list because completion was inside a regular comment or plain text part of a JsDoc comment.
+Info 2451 [20:53:30.056] getCompletionData: Get current token: 0.014121979475021362
+Info 2452 [20:53:30.056] getCompletionData: Is inside comment: 0.04555398225784302
+Info 2453 [20:53:30.056] Returning an empty list because completion was inside a regular comment or plain text part of a JsDoc comment.
+Info 2454 [20:53:30.157] Starting updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json
+Info 2455 [20:53:30.166] Finishing updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json Version: 271 structureChanged: false structureIsReused:: Completely Elapsed: 9.061704993247986ms
+Info 2456 [20:53:30.166] Different program with same set of files
+Info 2457 [20:53:30.166] getCompletionData: Get current token: 0.024303972721099854
+Info 2458 [20:53:30.167] getCompletionData: Is inside comment: 0.08162200450897217
+Info 2459 [20:53:30.167] Returning an empty list because completion was inside a regular comment or plain text part of a JsDoc comment.
+Info 2460 [20:53:30.171] getCompletionData: Get current token: 0.0253010094165802
+Info 2461 [20:53:30.171] getCompletionData: Is inside comment: 0.08595699071884155
+Info 2462 [20:53:30.171] Returning an empty list because completion was inside a regular comment or plain text part of a JsDoc comment.
+Info 2463 [20:53:30.246] Starting updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json
+Info 2464 [20:53:30.253] Finishing updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json Version: 272 structureChanged: false structureIsReused:: Completely Elapsed: 7.087183982133865ms
+Info 2465 [20:53:30.253] Different program with same set of files
+Info 2466 [20:53:30.253] getCompletionData: Get current token: 0.01058700680732727
+Info 2467 [20:53:30.253] getCompletionData: Is inside comment: 0.032481998205184937
+Info 2468 [20:53:30.253] Returning an empty list because completion was inside a regular comment or plain text part of a JsDoc comment.
+Info 2469 [20:53:30.256] getCompletionData: Get current token: 0.010040998458862305
+Info 2470 [20:53:30.256] getCompletionData: Is inside comment: 0.0296420156955719
+Info 2471 [20:53:30.256] Returning an empty list because completion was inside a regular comment or plain text part of a JsDoc comment.
+Info 2472 [20:53:30.790] Starting updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json
+Info 2473 [20:53:30.811] Finishing updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json Version: 273 structureChanged: false structureIsReused:: Completely Elapsed: 21.000624001026154ms
+Info 2474 [20:53:30.811] Different program with same set of files
+Info 2475 [20:53:42.589] Starting updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json
+Info 2476 [20:53:42.621] Finishing updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json Version: 274 structureChanged: false structureIsReused:: Completely Elapsed: 31.476934999227524ms
+Info 2477 [20:53:42.621] Different program with same set of files
+Info 2478 [20:53:42.806] Starting updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json
+Info 2479 [20:53:42.816] Finishing updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json Version: 275 structureChanged: false structureIsReused:: Completely Elapsed: 9.359724998474121ms
+Info 2480 [20:53:42.816] Different program with same set of files
+Info 2481 [20:53:42.816] getCompletionData: Get current token: 0.012603998184204102
+Info 2482 [20:53:42.816] getCompletionData: Is inside comment: 0.03347298502922058
+Info 2483 [20:53:42.816] Returning an empty list because completion was inside a regular comment or plain text part of a JsDoc comment.
+Info 2484 [20:53:42.830] getCompletionData: Get current token: 0.007075011730194092
+Info 2485 [20:53:42.830] getCompletionData: Is inside comment: 0.023212015628814697
+Info 2486 [20:53:42.830] Returning an empty list because completion was inside a regular comment or plain text part of a JsDoc comment.
+Info 2487 [20:53:42.951] Starting updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json
+Info 2488 [20:53:42.957] Finishing updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json Version: 276 structureChanged: false structureIsReused:: Completely Elapsed: 6.1774579882621765ms
+Info 2489 [20:53:42.957] Different program with same set of files
+Info 2490 [20:53:42.957] getCompletionData: Get current token: 0.009237021207809448
+Info 2491 [20:53:42.958] getCompletionData: Is inside comment: 0.029715001583099365
+Info 2492 [20:53:42.958] Returning an empty list because completion was inside a regular comment or plain text part of a JsDoc comment.
+Info 2493 [20:53:42.959] getCompletionData: Get current token: 0.008993983268737793
+Info 2494 [20:53:42.959] getCompletionData: Is inside comment: 0.029481977224349976
+Info 2495 [20:53:42.959] Returning an empty list because completion was inside a regular comment or plain text part of a JsDoc comment.
+Info 2496 [20:53:42.989] Starting updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json
+Info 2497 [20:53:42.993] Finishing updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json Version: 277 structureChanged: false structureIsReused:: Completely Elapsed: 4.329281002283096ms
+Info 2498 [20:53:42.993] Different program with same set of files
+Info 2499 [20:53:42.993] getCompletionData: Get current token: 0.008273005485534668
+Info 2500 [20:53:42.993] getCompletionData: Is inside comment: 0.02759799361228943
+Info 2501 [20:53:42.993] Returning an empty list because completion was inside a regular comment or plain text part of a JsDoc comment.
+Info 2502 [20:53:42.995] getCompletionData: Get current token: 0.009149998426437378
+Info 2503 [20:53:42.995] getCompletionData: Is inside comment: 0.02824300527572632
+Info 2504 [20:53:42.995] Returning an empty list because completion was inside a regular comment or plain text part of a JsDoc comment.
+Info 2505 [20:53:43.196] Starting updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json
+Info 2506 [20:53:43.203] Finishing updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json Version: 278 structureChanged: false structureIsReused:: Completely Elapsed: 6.669246017932892ms
+Info 2507 [20:53:43.203] Different program with same set of files
+Info 2508 [20:53:43.203] getCompletionData: Get current token: 0.007796972990036011
+Info 2509 [20:53:43.203] getCompletionData: Is inside comment: 0.023171991109848022
+Info 2510 [20:53:43.203] Returning an empty list because completion was inside a regular comment or plain text part of a JsDoc comment.
+Info 2511 [20:53:43.205] getCompletionData: Get current token: 0.007035017013549805
+Info 2512 [20:53:43.205] getCompletionData: Is inside comment: 0.023344993591308594
+Info 2513 [20:53:43.205] Returning an empty list because completion was inside a regular comment or plain text part of a JsDoc comment.
+Info 2514 [20:53:43.286] Starting updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json
+Info 2515 [20:53:43.293] Finishing updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json Version: 279 structureChanged: false structureIsReused:: Completely Elapsed: 6.509741991758347ms
+Info 2516 [20:53:43.293] Different program with same set of files
+Info 2517 [20:53:43.293] getCompletionData: Get current token: 0.013118982315063477
+Info 2518 [20:53:43.293] getCompletionData: Is inside comment: 0.041745007038116455
+Info 2519 [20:53:43.294] Returning an empty list because completion was inside a regular comment or plain text part of a JsDoc comment.
+Info 2520 [20:53:43.311] getCompletionData: Get current token: 0.01421201229095459
+Info 2521 [20:53:43.311] getCompletionData: Is inside comment: 0.04652899503707886
+Info 2522 [20:53:43.311] Returning an empty list because completion was inside a regular comment or plain text part of a JsDoc comment.
+Info 2523 [20:53:43.390] Starting updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json
+Info 2524 [20:53:43.398] Finishing updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json Version: 280 structureChanged: false structureIsReused:: Completely Elapsed: 7.82395401597023ms
+Info 2525 [20:53:43.398] Different program with same set of files
+Info 2526 [20:53:43.399] getCompletionData: Get current token: 0.007660001516342163
+Info 2527 [20:53:43.399] getCompletionData: Is inside comment: 0.02259799838066101
+Info 2528 [20:53:43.399] Returning an empty list because completion was inside a regular comment or plain text part of a JsDoc comment.
+Info 2529 [20:53:43.400] getCompletionData: Get current token: 0.007407009601593018
+Info 2530 [20:53:43.400] getCompletionData: Is inside comment: 0.022725015878677368
+Info 2531 [20:53:43.400] Returning an empty list because completion was inside a regular comment or plain text part of a JsDoc comment.
+Info 2532 [20:53:45.048] Starting updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json
+Info 2533 [20:53:45.058] Finishing updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json Version: 281 structureChanged: false structureIsReused:: Completely Elapsed: 10.123421996831894ms
+Info 2534 [20:53:45.058] Different program with same set of files
+Info 2535 [20:53:45.158] Starting updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json
+Info 2536 [20:53:45.162] Finishing updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json Version: 282 structureChanged: false structureIsReused:: Completely Elapsed: 4.385085999965668ms
+Info 2537 [20:53:45.162] Different program with same set of files
+Info 2538 [20:53:45.163] getCompletionData: Get current token: 0.007744014263153076
+Info 2539 [20:53:45.163] getCompletionData: Is inside comment: 0.027139008045196533
+Info 2540 [20:53:45.163] Returning an empty list because completion was inside a regular comment or plain text part of a JsDoc comment.
+Info 2541 [20:53:45.179] getCompletionData: Get current token: 0.007061004638671875
+Info 2542 [20:53:45.179] getCompletionData: Is inside comment: 0.022569000720977783
+Info 2543 [20:53:45.179] Returning an empty list because completion was inside a regular comment or plain text part of a JsDoc comment.
+Info 2544 [20:53:45.350] Starting updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json
+Info 2545 [20:53:45.355] Finishing updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json Version: 283 structureChanged: false structureIsReused:: Completely Elapsed: 4.992208003997803ms
+Info 2546 [20:53:45.355] Different program with same set of files
+Info 2547 [20:53:45.356] getCompletionData: Get current token: 0.010779976844787598
+Info 2548 [20:53:45.356] getCompletionData: Is inside comment: 0.034379005432128906
+Info 2549 [20:53:45.356] Returning an empty list because completion was inside a regular comment or plain text part of a JsDoc comment.
+Info 2550 [20:53:45.357] getCompletionData: Get current token: 0.00853198766708374
+Info 2551 [20:53:45.357] getCompletionData: Is inside comment: 0.029379993677139282
+Info 2552 [20:53:45.357] Returning an empty list because completion was inside a regular comment or plain text part of a JsDoc comment.
+Info 2553 [20:53:45.399] Starting updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json
+Info 2554 [20:53:45.403] Finishing updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json Version: 284 structureChanged: false structureIsReused:: Completely Elapsed: 4.134954005479813ms
+Info 2555 [20:53:45.403] Different program with same set of files
+Info 2556 [20:53:45.404] getCompletionData: Get current token: 0.007533997297286987
+Info 2557 [20:53:45.404] getCompletionData: Is inside comment: 0.024875015020370483
+Info 2558 [20:53:45.404] Returning an empty list because completion was inside a regular comment or plain text part of a JsDoc comment.
+Info 2559 [20:53:45.405] getCompletionData: Get current token: 0.007113009691238403
+Info 2560 [20:53:45.405] getCompletionData: Is inside comment: 0.02481400966644287
+Info 2561 [20:53:45.405] Returning an empty list because completion was inside a regular comment or plain text part of a JsDoc comment.
+Info 2562 [20:53:59.954] Starting updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json
+Info 2563 [20:53:59.961] Finishing updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json Version: 285 structureChanged: false structureIsReused:: Completely Elapsed: 7.293120980262756ms
+Info 2564 [20:53:59.961] Different program with same set of files
+Info 2565 [20:54:01.161] Starting updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json
+Info 2566 [20:54:01.173] Finishing updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json Version: 286 structureChanged: false structureIsReused:: Completely Elapsed: 11.356878012418747ms
+Info 2567 [20:54:01.173] Different program with same set of files
+Info 2568 [20:54:01.616] Starting updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json
+Info 2569 [20:54:01.624] Finishing updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json Version: 287 structureChanged: false structureIsReused:: Completely Elapsed: 7.102535992860794ms
+Info 2570 [20:54:01.624] Different program with same set of files
+Info 2571 [20:54:02.227] Starting updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json
+Info 2572 [20:54:02.240] Finishing updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json Version: 288 structureChanged: false structureIsReused:: Completely Elapsed: 12.153378993272781ms
+Info 2573 [20:54:02.240] Different program with same set of files
+Info 2574 [20:54:03.176] Starting updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json
+Info 2575 [20:54:03.185] Finishing updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json Version: 289 structureChanged: false structureIsReused:: Completely Elapsed: 8.613307982683182ms
+Info 2576 [20:54:03.185] Different program with same set of files
+Info 2577 [20:54:06.526] Starting updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json
+Info 2578 [20:54:06.550] Finishing updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json Version: 290 structureChanged: false structureIsReused:: Completely Elapsed: 24.547668993473053ms
+Info 2579 [20:54:06.550] Different program with same set of files
+Info 2580 [20:54:06.816] Starting updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json
+Info 2581 [20:54:06.825] Finishing updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json Version: 291 structureChanged: false structureIsReused:: Completely Elapsed: 8.495323985815048ms
+Info 2582 [20:54:06.825] Different program with same set of files
+Info 2583 [20:54:06.825] getCompletionData: Get current token: 0.013092994689941406
+Info 2584 [20:54:06.825] getCompletionData: Is inside comment: 0.036758989095687866
+Info 2585 [20:54:06.825] Returning an empty list because completion was inside a regular comment or plain text part of a JsDoc comment.
+Info 2586 [20:54:06.826] getCompletionData: Get current token: 0.009974002838134766
+Info 2587 [20:54:06.827] getCompletionData: Is inside comment: 0.03000497817993164
+Info 2588 [20:54:06.827] Returning an empty list because completion was inside a regular comment or plain text part of a JsDoc comment.
+Info 2589 [20:54:07.285] Starting updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json
+Info 2590 [20:54:07.290] Finishing updateGraphWorker: Project: /home/euki/Disciplines/marketX/my-notes-clone/tsconfig.json Version: 292 structureChanged: false structureIsReused:: Completely Elapsed: 5.42561000585556ms
+Info 2591 [20:54:07.290] Different program with same set of files
+Info 2592 [20:54:07.291] getCompletionData: Get current token: 0.01583099365234375
+Info 2593 [20:54:07.291] getCompletionData: Is inside comment: 0.043668001890182495
+Info 2594 [20:54:07.291] Returning an empty list because completion was inside a regular comment or plain text part of a JsDoc comment.
+Info 2595 [20:54:07.308] getCompletionData: Get current token: 0.010150998830795288
+Info 2596 [20:54:07.308] getCompletionData: Is inside comment: 0.03635397553443909
+Info 2597 [20:54:07.308] Returning an empty list because completion was inside a regular comment or plain text part of a JsDoc comment.
