@@ -1,6 +1,6 @@
-import styles from '@/styles/UtilityBar.module.css';
-import { UtilityContext } from 'lib/utilityContext';
 import { Dispatch, SetStateAction, useContext } from 'react';
+import styles from '@/styles/UtilityBar.module.css';
+import { UtilityContext } from '@/lib/utilityContext';
 import Button from './Button';
 
 // All of the SVG's used for the utilitybar buttons

@@ -1,8 +1,8 @@
-import { newFolderDB } from '@/db/helpers.db';
-import styles from '@/styles/folderStyles/NewFolderPopup.module.css';
-import { ACTION } from 'lib/reducer';
-import { UtilityContext } from 'lib/utilityContext';
 import { Dispatch, SetStateAction, useContext, useEffect, useRef, useState } from 'react';
+import styles from '@/styles/folderStyles/NewFolderPopup.module.css';
+import { ACTION } from '@/lib/reducer';
+import { UtilityContext } from '@/lib/utilityContext';
+import { newFolderDB } from '@/db/helpers.db';
 
 const NewFolderPopup = ({ dispatch }: { dispatch: Dispatch<ActionType> }): JSX.Element => {
   //This seciton allows access to the utilitybar variables

@@ -1,11 +1,11 @@
+import { Dispatch, SetStateAction, useContext } from 'react';
 import styles from '@/styles/Frame.module.css';
 import folder from '@/styles/folderStyles/Folder.module.css';
-import NewFolderBtn from './NewFolderBtn';
-import { ACTION } from '../../lib/reducer';
-import { Dispatch, SetStateAction, useContext } from 'react';
-import { ReducerContext } from '../NotesApp';
-import { UtilityContext } from 'lib/utilityContext';
+import { ACTION } from '@/lib/reducer';
+import { UtilityContext } from '@/lib/utilityContext';
+import { ReducerContext } from '@/components/NotesApp';
 import NewFolderPopup from './NewFolderPopup';
+import NewFolderBtn from './NewFolderBtn';
 
 const FolderFrame = ({
   section,

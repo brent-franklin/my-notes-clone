@@ -1,9 +1,9 @@
-import styles from '@/styles/noteStyles/NoteCard.module.css';
-import { UtilityContext } from 'lib/utilityContext';
-import Image from 'next/image';
 import { Dispatch, SetStateAction, useContext, useEffect, useRef } from 'react';
-import { ACTION } from '../../lib/reducer';
-import { ReducerContext } from '../NotesApp';
+import styles from '@/styles/noteStyles/NoteCard.module.css';
+import { UtilityContext } from '@/lib/utilityContext';
+import { ACTION } from '@/lib/reducer';
+import { ReducerContext } from '@/components/NotesApp';
+import Image from 'next/image';
 
 const NoteCard = ({
   id,

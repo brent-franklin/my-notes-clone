@@ -11,7 +11,8 @@ import {
 } from 'react';
 
 // lib
-import { ACTION, emptyNote, reducer } from '../lib/reducer';
+import { ACTION, emptyNote, reducer } from '@/lib/reducer';
+import { UtilityContext } from '@/lib/utilityContext';
 
 // Database Helper Functions
 import { newNoteDB, updateNoteDB } from 'db/helpers.db';
@@ -24,7 +25,6 @@ import NotesFrame from './notesComponents/NotesFrame';
 // Styles for TextArea
 import styles from 'styles/noteStyles/NoteForm.module.css';
 import home from 'styles/Home.module.css';
-import { UtilityContext } from 'lib/utilityContext';
 
 export const ReducerContext = createContext<ReducedType | null>(null);
 

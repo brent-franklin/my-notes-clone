@@ -1,8 +1,8 @@
-import styles from '@/styles/Button.module.css';
-import { UtilityContext } from 'lib/utilityContext';
 import { Dispatch, SetStateAction, useContext } from 'react';
-import Image from 'next/image';
+import styles from '@/styles/Button.module.css';
+import { UtilityContext } from '@/lib/utilityContext';
 import { altText } from './UtilityBar';
+import Image from 'next/image';
 
 const Button = ({ src, alt }: { src: string; alt: string }): JSX.Element => {
   //This seciton allows access to the utilitybar variables

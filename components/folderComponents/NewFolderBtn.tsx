@@ -1,6 +1,6 @@
-import styles from '@/styles/folderStyles/NewFolderBtn.module.css';
-import { UtilityContext } from 'lib/utilityContext';
 import { Dispatch, SetStateAction, useContext } from 'react';
+import styles from '@/styles/folderStyles/NewFolderBtn.module.css';
+import { UtilityContext } from '@/lib/utilityContext';
 import Image from 'next/image';
 
 const NewFolderBtn = (): JSX.Element => {

@@ -1,8 +1,8 @@
+import { Dispatch, SetStateAction, useCallback, useContext } from 'react';
 import styles from '@/styles/Frame.module.css';
-import fuzzySearch from 'lib/fuzzySearch';
-import { UtilityContext } from 'lib/utilityContext';
-import { Dispatch, SetStateAction, useCallback, useContext, useEffect } from 'react';
-import { ReducerContext } from '../NotesApp';
+import fuzzySearch from '@/lib/fuzzySearch';
+import { UtilityContext } from '@/lib/utilityContext';
+import { ReducerContext } from '@/components/NotesApp';
 import NoteCard from './NoteCard';
 
 const NotesFrame = ({
