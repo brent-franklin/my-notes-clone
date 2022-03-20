@@ -41,7 +41,7 @@
 }
 
 #note textarea {
-  height: calc(100% - 30px);
+  height: calc(100% - 100px);
 }
 
 #hidden {
