@@ -133,14 +133,15 @@ const NotesApp = ({
     (autoFocusTextArea?.current as unknown as HTMLTextAreaElement)?.focus();
   }, [autoFocusTextArea, textAreaState]);
 
-    const toggleTextArea = !utilities.toggleFolders ? styles.noteFormOpen : styles.noteFormClose;
-    const toggleTextAreaHeader = !utilities.toggleFolders ? styles.noteHeaderOpen : styles.noteHeaderClose;
-
+  const toggleTextArea = !utilities.toggleFolders ? styles.noteFormOpen : styles.noteFormClose;
+  const toggleTextAreaHeader = !utilities.toggleFolders
+    ? styles.noteHeaderOpen
+    : styles.noteHeaderClose;
 
   return (
     <main id={home.container}>
       <ReducerContext.Provider value={state as ReducedType}>
-          <FolderFrame section="folders" dispatch={dispatch} />
+        <FolderFrame section="folders" dispatch={dispatch} />
 
         <NotesFrame section="notes" dispatch={dispatch} />
 

@@ -16,7 +16,7 @@ const NotesFrame = ({
   // This section allows access to the reducer variables
   // notes = NoteType[], emptyNote = NoteType[]
   const reducedContext = useContext(ReducerContext);
-  const { notes, emptyNote, selectedFolder, selectedNote } = reducedContext as ReducedType;
+  const { notes, emptyNote, selectedFolder } = reducedContext as ReducedType;
   //This seciton allows access to the utilitybar variables
   /*
       {toggleFolders: boolean,
