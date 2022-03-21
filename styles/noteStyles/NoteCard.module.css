@@ -56,13 +56,28 @@
   user-select: none;
 }
 
-.alert{
-  display: block;
+.alertOpen{
   position: absolute;
+  opacity: 1;
+  left: calc(100%*4/7);
+  bottom: 10px;
+  color: red;
+  font-weight: bold;
+  transition: opacity 2s ease-out forward;
+}
+
+.alertClose{
+  position: absolute;
+  opacity: 1;
   right: 10px;
+  bottom: 10px;
+  color: red;
+  font-weight: bold; 
+  transition: opacity 2s ease-out forward;
 }
 
 .noAlert {
-  display: none;
+  position: absolute;
+  opacity: 0;
 }
 

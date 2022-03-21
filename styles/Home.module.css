@@ -1,6 +1,4 @@
 #container {
-  /* display: flex; */
-  /* gap: 0 2px; */
   position: relative;
   height: calc(100vh - 52px);
   width: 100%;

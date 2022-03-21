@@ -62,14 +62,13 @@ const NoteCard = ({
   const select = selectedNote?.id === note.id ? styles.selected : null;
   // If the newNote utility button is pressed then the new note shows in the note section
     const toggleNote = utilities.toggleNewNote && !note.id ? styles.hidden : null;
-
     const emptyList = notes.length === 0 ? styles.show : null;
 
   // If the note body is over 50 characters return body else truncate and return with ellipses "..."
   const noteBody = body.join('').length > 65 ? `${body.join('').slice(0, 65)}...` : body.join('');
 
   // Alert for altered but unsaved notes
-  const alert = !edited.includes(note.id as number) ? styles.noAlert : styles.alert;
+    const alert = !edited.includes(note.id as number) ? styles.noAlert : !utilities.toggleFolders ? styles.alertClose: styles.alertOpen;
 
   return (
     <article
