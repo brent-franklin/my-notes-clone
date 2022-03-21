@@ -140,7 +140,7 @@ const NotesApp = ({
   return (
     <main id={home.container}>
       <ReducerContext.Provider value={state as ReducedType}>
-        <FolderFrame section="folders" dispatch={dispatch} />
+          <FolderFrame section="folders" dispatch={dispatch} />
 
         <NotesFrame section="notes" dispatch={dispatch} />
 

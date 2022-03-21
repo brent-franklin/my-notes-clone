@@ -1,7 +1,7 @@
 import { Dispatch, SetStateAction, useContext } from 'react';
 import styles from '@/styles/Frame.module.css';
 import folder from '@/styles/folderStyles/Folder.module.css';
-import { ACTION } from '@/lib/reducer';
+import { ACTION, emptyNote } from '@/lib/reducer';
 import { UtilityContext } from '@/lib/utilityContext';
 import { ReducerContext } from '@/components/NotesApp';
 import NewFolderPopup from './NewFolderPopup';
@@ -14,7 +14,6 @@ const FolderFrame = ({
   section: string;
   dispatch: Dispatch<ActionType>;
 }): JSX.Element => {
-
   // This section allows access to the reducer variables
   // folders = FolderType[] | selectedFolder = folder.name
   const reducedContext = useContext(ReducerContext);
@@ -37,13 +36,14 @@ const FolderFrame = ({
     evt.preventDefault();
     const newFolder: string = (evt.target as HTMLParagraphElement).innerText;
     dispatch({ type: ACTION.CHANGE_SELECTED_FOLDER, payload: { newFolder } });
+    dispatch({ type: ACTION.CHANGE_SELECTED_NOTE, payload: { selectedNote: emptyNote } });
   };
 
   // If utilities.toggleFolders is false then hide the folder panel
   const toggle: string = !utilities.toggleFolders ? styles.frameClose : styles.frameOpen;
-    
+
   return (
-      <section className={`${styles[section]} ${toggle}`}>
+    <section className={`${styles[section]} ${toggle}`}>
       <h1>iCloud</h1>
       <ul>
         {folders.map((f: FolderType) => (

@@ -20,7 +20,6 @@ export const newFolderDB = async (input: string) => {
       name: input,
     }),
   }).then((folder) => folder.json());
-    console.log(folder);
   return folder;
 };
 
