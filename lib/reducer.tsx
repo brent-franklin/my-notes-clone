@@ -90,9 +90,12 @@ export const reducer = (state: ReducedType, action: ActionType): ReducedType => 
     case ACTION.DELETE_NOTE:
       const deleteNote = async () => await deleteNoteDB(state.selectedNote);
       deleteNote();
-      const deletedNoteList = state.notes.filter((n) => n.id !== state.selectedNote.id);
-      const selectedAfterDelete = !deletedNoteList.length ? state.emptyNote : deletedNoteList[0];
-      return { ...state, notes: deletedNoteList, selectedNote: selectedAfterDelete };
+	  if(state.selectedNote.id !== null){
+	    const deletedNoteList = state.notes.filter((n) => n.id !== state.selectedNote.id);
+	    const selectedAfterDelete = !deletedNoteList.length ? state.emptyNote : deletedNoteList[0];
+	    return { ...state, notes: deletedNoteList, selectedNote: selectedAfterDelete };
+	  }
+	  return {...state}
 
 
     default:
