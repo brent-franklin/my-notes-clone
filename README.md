@@ -29,7 +29,7 @@ psql < ./db/my-notes-clone.pgsql
 
 Before the app can run we need to set some environment variables
 
-Create a .env.local file in the home directory
+Create a .env.local file in the root directory
 ```bash
 touch .env.local
 ```
