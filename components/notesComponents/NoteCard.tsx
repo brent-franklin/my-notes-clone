@@ -63,7 +63,7 @@ const NoteCard = ({
     // If note list is only empty note focus on empty note
     useEffect(()=> {
 	dispatch({ type: ACTION.CHANGE_SELECTED_NOTE, payload: {selectedNote : 0} }) 
-    }, [oneNote])
+    }, [oneNote, dispatch])
 
   // Add style to darken background of selected note
   const select = selectedNote?.id === note.id ? styles.selected : null;
