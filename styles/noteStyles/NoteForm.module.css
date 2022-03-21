@@ -17,6 +17,7 @@
 #noteHeaderClose{
   width: 100%;
   text-align: center;
+  font-weight: bold;
   color: #c3c3c3;
 }
 
@@ -32,11 +33,3 @@
   width: calc(100%/3*2);
 }
 
-#noteHeader time {
-  font-weight: bold;
-}
-
-#noteHeader span {
-  font-size: 0.9rem;
-  font-weight: bold;
-}
