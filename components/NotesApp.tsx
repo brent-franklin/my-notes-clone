@@ -133,6 +133,9 @@ const NotesApp = ({
     (autoFocusTextArea?.current as unknown as HTMLTextAreaElement)?.focus();
   }, [autoFocusTextArea, textAreaState]);
 
+    const toggleTextArea = !utilities.toggleFolders ? styles.noteFormOpen : styles.noteFormClose;
+    const toggleTextAreaHeader = !utilities.toggleFolders ? styles.noteHeaderOpen : styles.noteHeaderClose;
+
 
   return (
     <main id={home.container}>
@@ -142,13 +145,13 @@ const NotesApp = ({
         <NotesFrame section="notes" dispatch={dispatch} />
 
         <Frame section="note">
-          <p id={styles.noteHeader}>
+          <p id={toggleTextAreaHeader}>
             <time>{noteCreatedAt}</time>
             <span>Shift + Enter to Save</span>
           </p>
 
           <textarea
-            id={styles.noteForm}
+            id={toggleTextArea}
             placeholder="New Note"
             onKeyDown={handleKeyDown}
             onChange={handleChange}

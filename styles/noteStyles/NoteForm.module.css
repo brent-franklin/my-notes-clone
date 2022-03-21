@@ -1,14 +1,33 @@
-#noteForm{
-  height: 100%;
+#noteFormOpen{
+  height: calc(100% - 100px);
   width: 100%;
   padding: 10px;
   border: none;
 }
 
-#noteHeader {
+
+#noteFormClose{
+  height: calc(100% - 100px);
+  width: calc(100% / 3 * 2);
+  padding: 10px;
+  border: none;
+}
+
+#noteHeaderOpen {
   display: flex;
+  width: 100%;
   flex-direction: column;
   align-items: center;
+  color: #c3c3c3;
+}
+
+#noteHeaderClose {
+  display: flex;
+  width: 200px;
+  align-items: center;
+  flex-direction: column;
+  color: #c3c3c3;
+  transform: translateX(calc(100%/3 + 200px));
 }
 
 #noteHeader time {

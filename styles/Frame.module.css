@@ -132,10 +132,4 @@
   overflow-y: auto;
 }
 
-/* Text Area styling */
-
-#note textarea {
-  height: calc(100% - 100px);
-}
-
 
