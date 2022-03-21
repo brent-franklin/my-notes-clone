@@ -32,26 +32,28 @@ const NotesFrame = ({
       if (fuzzySearch(utilities.searchInput, n)) return n;
     });
   }, [utilities.searchInput, notes]);
+
   // Combine searchedNotes and empty note to display on screen together
-  const mainNoteList = [emptyNote, ...searchNotes()];
+  const mainNoteList = [emptyNote, ...searchNotes()].filter(
+    (n: NoteType) => n.folderName === selectedFolder || n.folderName === ''
+  );
 
   // If utilities.toggleFolders is false then hide the folder panel
   const toggle: string = !utilities.toggleFolders ? styles.frameClose : styles.frameOpen;
 
   return (
     <section id={styles[section]} className={toggle}>
-      {mainNoteList
-        .filter((n: NoteType) => n.folderName === selectedFolder || n.folderName === '')
-        .map((n: NoteType, i: number) => {
-          return (
-            <NoteCard
-              id={i}
-              key={n.timeCreated ?? 'newNote'}
-              note={n}
-              dispatch={dispatch}
-            />
-          );
-        })}
+      {mainNoteList.map((n: NoteType, i: number) => {
+        return (
+          <NoteCard
+            id={i}
+            key={n.timeCreated ?? 'newNote'}
+            note={n}
+            dispatch={dispatch}
+            oneNote={mainNoteList}
+          />
+        );
+      })}
     </section>
   );
 };

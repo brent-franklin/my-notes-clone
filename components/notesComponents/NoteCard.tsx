@@ -9,10 +9,12 @@ const NoteCard = ({
   id,
   note,
   dispatch,
+  oneNote,
 }: {
   id: number;
   note: NoteType;
   dispatch: Dispatch<ActionType>;
+  oneNote: NoteType[]
 }): JSX.Element => {
   // This section allows access to the reducer variables
   // selectedNote = NoteType[]
@@ -62,7 +64,7 @@ const NoteCard = ({
   const select = selectedNote?.id === note.id ? styles.selected : null;
   // If the newNote utility button is pressed then the new note shows in the note section
     const toggleNote = utilities.toggleNewNote && !note.id ? styles.hidden : null;
-    const emptyList = notes.length === 0 ? styles.show : null;
+    const emptyList = notes.length === 0 || oneNote.length === 1 ? styles.show : null;
 
   // If the note body is over 50 characters return body else truncate and return with ellipses "..."
   const noteBody = body.join('').length > 65 ? `${body.join('').slice(0, 65)}...` : body.join('');
