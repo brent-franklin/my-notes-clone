@@ -1,4 +1,4 @@
-import { deleteNoteDB } from '@/db/helpers.db';
+import { deleteNoteDB, newNoteDB } from '@/db/helpers.db';
 
 // These are all of the decided actions available in the useReducer hook
 export const ACTION = {

@@ -27,6 +27,31 @@ When inside home folder, populate the database with initial values by running:
 psql < ./db/my-notes-clone.pgsql
 ```
 
+Before the app can run we need to set some environment variables
+
+Create a .env.local file in the home directory
+```bash
+touch .env.local
+```
+
+Then set the environment variables for PostgreSQL and the URL for the API
+Copy these into the file
+
+[user] is your personal username for your PostgreSQL instance
+[passowrd] is your personal password for your PostgreSQL instance
+
+Also, if you have changed the port that PostgreSQL runs on please subsitute the port number below
+for your chosen port number, otherwise it should default to 5432
+
+```text
+PGUSER=[user]
+PGHOST=localhost
+PGDATABASE=my_notes_clone
+PGPASSWORD=[password]
+PGPORT=5432
+NOTES_URL=http://localhost:3000/
+```
+
 First, run the development server:
 
 ```bash
