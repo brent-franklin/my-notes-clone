@@ -60,6 +60,7 @@ const NoteCard = ({
     dispatch({ type: ACTION.CHANGE_SELECTED_NOTE, payload: { selectedNote: id } });
   };
 
+    // If note list is only empty note focus on empty note
     useEffect(()=> {
 	dispatch({ type: ACTION.CHANGE_SELECTED_NOTE, payload: {selectedNote : 0} }) 
     }, [oneNote])

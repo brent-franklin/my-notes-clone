@@ -83,11 +83,13 @@ export const reducer = (state: ReducedType, action: ActionType): ReducedType => 
     case ACTION.DELETE_NOTE:
       const deleteNote = async () => await deleteNoteDB(state.selectedNote);
       deleteNote();
+	  // If note id does not equal emptyNote.id/null then remove note and focus on new note
       if (state.selectedNote.id !== null) {
         const deletedNoteList = state.notes.filter((n) => n.id !== state.selectedNote.id);
         const selectedAfterDelete = !deletedNoteList.length ? state.emptyNote : deletedNoteList[0];
         return { ...state, notes: deletedNoteList, selectedNote: selectedAfterDelete };
       } else {
+	  // if note id does equal null then set selected note to empty note
         return { ...state, selectedNote: emptyNote };
       }
 
