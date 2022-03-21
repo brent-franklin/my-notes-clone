@@ -263,3 +263,140 @@
 found 0 vulnerabilities
 
 [14:34:51.582] Updated types-registry npm package
+[15:47:43.528] Got install request {"projectName":"/dev/null/inferredProject1*","fileNames":[],"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":[],"projectRootPath":"/home/euki/Disciplines/marketX/my-notes-clone/components/notesComponents","kind":"discover"}
+[15:47:43.565] Loaded safelist from types map file '/home/euki/.fnm/node-versions/v16.3.0/installation/lib/node_modules/typescript/lib/typesMap.json'
+[15:47:43.566] Explicitly included types: []
+[15:47:43.566] Inferred typings from unresolved imports: []
+[15:47:43.567] Result: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/euki/Disciplines/marketX/my-notes-clone/components/notesComponents/bower_components","/home/euki/Disciplines/marketX/my-notes-clone/components/notesComponents/node_modules"]}
+[15:47:43.567] Finished typings discovery: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/euki/Disciplines/marketX/my-notes-clone/components/notesComponents/bower_components","/home/euki/Disciplines/marketX/my-notes-clone/components/notesComponents/node_modules"]}
+[15:47:43.567] DirectoryWatcher:: Added:: WatchInfo: /home/euki/Disciplines/marketX/my-notes-clone/components/notesComponents/bower_components
+[15:47:43.584] Unhandled exception: Error: ENOENT: no such file or directory, uv_cwd at Error: ENOENT: no such file or directory, uv_cwd
+    at process.wrappedCwd [as cwd] (node:internal/bootstrap/switches/does_own_process_state:126:28)
+    at /home/euki/.fnm/node-versions/v16.3.0/installation/lib/node_modules/typescript/lib/typingsInstaller.js:7280:79
+    at Object.getCurrentDirectory (/home/euki/.fnm/node-versions/v16.3.0/installation/lib/node_modules/typescript/lib/typingsInstaller.js:1576:25)
+    at Object.watchDirectory (/home/euki/.fnm/node-versions/v16.3.0/installation/lib/node_modules/typescript/lib/typingsInstaller.js:112741:324)
+    at createProjectWatcher (/home/euki/.fnm/node-versions/v16.3.0/installation/lib/node_modules/typescript/lib/typingsInstaller.js:123148:48)
+    at NodeTypingsInstaller.TypingsInstaller.watchFiles (/home/euki/.fnm/node-versions/v16.3.0/installation/lib/node_modules/typescript/lib/typingsInstaller.js:123182:33)
+    at NodeTypingsInstaller.TypingsInstaller.install (/home/euki/.fnm/node-versions/v16.3.0/installation/lib/node_modules/typescript/lib/typingsInstaller.js:122894:26)
+    at process.<anonymous> (/home/euki/.fnm/node-versions/v16.3.0/installation/lib/node_modules/typescript/lib/typingsInstaller.js:123349:39)
+    at process.emit (node:events:394:28)
+    at emit (node:internal/child_process:920:12)
+[15:47:43.585] Got install request {"projectName":"/dev/null/inferredProject2*","fileNames":[],"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":[],"projectRootPath":"/home/euki/Disciplines/marketX/my-notes-clone/components/notesComponents","kind":"discover"}
+[15:47:43.585] Explicitly included types: []
+[15:47:43.585] Inferred typings from unresolved imports: []
+[15:47:43.585] Result: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/euki/Disciplines/marketX/my-notes-clone/components/notesComponents/bower_components","/home/euki/Disciplines/marketX/my-notes-clone/components/notesComponents/node_modules"]}
+[15:47:43.585] Finished typings discovery: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/euki/Disciplines/marketX/my-notes-clone/components/notesComponents/bower_components","/home/euki/Disciplines/marketX/my-notes-clone/components/notesComponents/node_modules"]}
+[15:47:43.585] DirectoryWatcher:: Added:: WatchInfo: /home/euki/Disciplines/marketX/my-notes-clone/components/notesComponents/bower_components
+[15:47:43.585] Unhandled exception: Error: ENOENT: no such file or directory, uv_cwd at Error: ENOENT: no such file or directory, uv_cwd
+    at process.wrappedCwd [as cwd] (node:internal/bootstrap/switches/does_own_process_state:126:28)
+    at /home/euki/.fnm/node-versions/v16.3.0/installation/lib/node_modules/typescript/lib/typingsInstaller.js:7280:79
+    at Object.getCurrentDirectory (/home/euki/.fnm/node-versions/v16.3.0/installation/lib/node_modules/typescript/lib/typingsInstaller.js:1576:25)
+    at Object.watchDirectory (/home/euki/.fnm/node-versions/v16.3.0/installation/lib/node_modules/typescript/lib/typingsInstaller.js:112741:324)
+    at createProjectWatcher (/home/euki/.fnm/node-versions/v16.3.0/installation/lib/node_modules/typescript/lib/typingsInstaller.js:123148:48)
+    at NodeTypingsInstaller.TypingsInstaller.watchFiles (/home/euki/.fnm/node-versions/v16.3.0/installation/lib/node_modules/typescript/lib/typingsInstaller.js:123182:33)
+    at NodeTypingsInstaller.TypingsInstaller.install (/home/euki/.fnm/node-versions/v16.3.0/installation/lib/node_modules/typescript/lib/typingsInstaller.js:122894:26)
+    at process.<anonymous> (/home/euki/.fnm/node-versions/v16.3.0/installation/lib/node_modules/typescript/lib/typingsInstaller.js:123349:39)
+    at process.emit (node:events:394:28)
+    at emit (node:internal/child_process:920:12)
+[15:47:43.585] Got install request {"projectName":"/dev/null/inferredProject3*","fileNames":[],"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":[],"projectRootPath":"/home/euki/Disciplines/marketX/my-notes-clone/components","kind":"discover"}
+[15:47:43.585] Explicitly included types: []
+[15:47:43.585] Inferred typings from unresolved imports: []
+[15:47:43.586] Result: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/euki/Disciplines/marketX/my-notes-clone/components/bower_components","/home/euki/Disciplines/marketX/my-notes-clone/components/node_modules"]}
+[15:47:43.586] Finished typings discovery: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/euki/Disciplines/marketX/my-notes-clone/components/bower_components","/home/euki/Disciplines/marketX/my-notes-clone/components/node_modules"]}
+[15:47:43.586] DirectoryWatcher:: Added:: WatchInfo: /home/euki/Disciplines/marketX/my-notes-clone/components/bower_components
+[15:47:43.586] Unhandled exception: Error: ENOENT: no such file or directory, uv_cwd at Error: ENOENT: no such file or directory, uv_cwd
+    at process.wrappedCwd [as cwd] (node:internal/bootstrap/switches/does_own_process_state:126:28)
+    at /home/euki/.fnm/node-versions/v16.3.0/installation/lib/node_modules/typescript/lib/typingsInstaller.js:7280:79
+    at Object.getCurrentDirectory (/home/euki/.fnm/node-versions/v16.3.0/installation/lib/node_modules/typescript/lib/typingsInstaller.js:1576:25)
+    at Object.watchDirectory (/home/euki/.fnm/node-versions/v16.3.0/installation/lib/node_modules/typescript/lib/typingsInstaller.js:112741:324)
+    at createProjectWatcher (/home/euki/.fnm/node-versions/v16.3.0/installation/lib/node_modules/typescript/lib/typingsInstaller.js:123148:48)
+    at NodeTypingsInstaller.TypingsInstaller.watchFiles (/home/euki/.fnm/node-versions/v16.3.0/installation/lib/node_modules/typescript/lib/typingsInstaller.js:123182:33)
+    at NodeTypingsInstaller.TypingsInstaller.install (/home/euki/.fnm/node-versions/v16.3.0/installation/lib/node_modules/typescript/lib/typingsInstaller.js:122894:26)
+    at process.<anonymous> (/home/euki/.fnm/node-versions/v16.3.0/installation/lib/node_modules/typescript/lib/typingsInstaller.js:123349:39)
+    at process.emit (node:events:394:28)
+    at emit (node:internal/child_process:920:12)
+[15:47:43.586] Got install request {"projectName":"/dev/null/inferredProject4*","fileNames":[],"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":[],"projectRootPath":"/home/euki/Disciplines/marketX/my-notes-clone/components/folderComponents","kind":"discover"}
+[15:47:43.586] Explicitly included types: []
+[15:47:43.586] Inferred typings from unresolved imports: []
+[15:47:43.586] Result: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/euki/Disciplines/marketX/my-notes-clone/components/folderComponents/bower_components","/home/euki/Disciplines/marketX/my-notes-clone/components/folderComponents/node_modules"]}
+[15:47:43.586] Finished typings discovery: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/euki/Disciplines/marketX/my-notes-clone/components/folderComponents/bower_components","/home/euki/Disciplines/marketX/my-notes-clone/components/folderComponents/node_modules"]}
+[15:47:43.586] DirectoryWatcher:: Added:: WatchInfo: /home/euki/Disciplines/marketX/my-notes-clone/components/folderComponents/bower_components
+[15:47:43.586] Unhandled exception: Error: ENOENT: no such file or directory, uv_cwd at Error: ENOENT: no such file or directory, uv_cwd
+    at process.wrappedCwd [as cwd] (node:internal/bootstrap/switches/does_own_process_state:126:28)
+    at /home/euki/.fnm/node-versions/v16.3.0/installation/lib/node_modules/typescript/lib/typingsInstaller.js:7280:79
+    at Object.getCurrentDirectory (/home/euki/.fnm/node-versions/v16.3.0/installation/lib/node_modules/typescript/lib/typingsInstaller.js:1576:25)
+    at Object.watchDirectory (/home/euki/.fnm/node-versions/v16.3.0/installation/lib/node_modules/typescript/lib/typingsInstaller.js:112741:324)
+    at createProjectWatcher (/home/euki/.fnm/node-versions/v16.3.0/installation/lib/node_modules/typescript/lib/typingsInstaller.js:123148:48)
+    at NodeTypingsInstaller.TypingsInstaller.watchFiles (/home/euki/.fnm/node-versions/v16.3.0/installation/lib/node_modules/typescript/lib/typingsInstaller.js:123182:33)
+    at NodeTypingsInstaller.TypingsInstaller.install (/home/euki/.fnm/node-versions/v16.3.0/installation/lib/node_modules/typescript/lib/typingsInstaller.js:122894:26)
+    at process.<anonymous> (/home/euki/.fnm/node-versions/v16.3.0/installation/lib/node_modules/typescript/lib/typingsInstaller.js:123349:39)
+    at process.emit (node:events:394:28)
+    at emit (node:internal/child_process:920:12)
+[15:47:43.586] Got install request {"projectName":"/dev/null/inferredProject5*","fileNames":[],"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":[],"projectRootPath":"/home/euki/Disciplines/marketX/my-notes-clone/lib","kind":"discover"}
+[15:47:43.586] Explicitly included types: []
+[15:47:43.586] Inferred typings from unresolved imports: []
+[15:47:43.586] Result: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/euki/Disciplines/marketX/my-notes-clone/lib/bower_components","/home/euki/Disciplines/marketX/my-notes-clone/lib/node_modules"]}
+[15:47:43.586] Finished typings discovery: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/euki/Disciplines/marketX/my-notes-clone/lib/bower_components","/home/euki/Disciplines/marketX/my-notes-clone/lib/node_modules"]}
+[15:47:43.586] DirectoryWatcher:: Added:: WatchInfo: /home/euki/Disciplines/marketX/my-notes-clone/lib/bower_components
+[15:47:43.587] Unhandled exception: Error: ENOENT: no such file or directory, uv_cwd at Error: ENOENT: no such file or directory, uv_cwd
+    at process.wrappedCwd [as cwd] (node:internal/bootstrap/switches/does_own_process_state:126:28)
+    at /home/euki/.fnm/node-versions/v16.3.0/installation/lib/node_modules/typescript/lib/typingsInstaller.js:7280:79
+    at Object.getCurrentDirectory (/home/euki/.fnm/node-versions/v16.3.0/installation/lib/node_modules/typescript/lib/typingsInstaller.js:1576:25)
+    at Object.watchDirectory (/home/euki/.fnm/node-versions/v16.3.0/installation/lib/node_modules/typescript/lib/typingsInstaller.js:112741:324)
+    at createProjectWatcher (/home/euki/.fnm/node-versions/v16.3.0/installation/lib/node_modules/typescript/lib/typingsInstaller.js:123148:48)
+    at NodeTypingsInstaller.TypingsInstaller.watchFiles (/home/euki/.fnm/node-versions/v16.3.0/installation/lib/node_modules/typescript/lib/typingsInstaller.js:123182:33)
+    at NodeTypingsInstaller.TypingsInstaller.install (/home/euki/.fnm/node-versions/v16.3.0/installation/lib/node_modules/typescript/lib/typingsInstaller.js:122894:26)
+    at process.<anonymous> (/home/euki/.fnm/node-versions/v16.3.0/installation/lib/node_modules/typescript/lib/typingsInstaller.js:123349:39)
+    at process.emit (node:events:394:28)
+    at emit (node:internal/child_process:920:12)
+[15:47:43.587] Got install request {"projectName":"/dev/null/inferredProject6*","fileNames":[],"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":[],"projectRootPath":"/home/euki/Disciplines/marketX/my-notes-clone/components","kind":"discover"}
+[15:47:43.587] Explicitly included types: []
+[15:47:43.587] Inferred typings from unresolved imports: []
+[15:47:43.587] Result: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/euki/Disciplines/marketX/my-notes-clone/components/bower_components","/home/euki/Disciplines/marketX/my-notes-clone/components/node_modules"]}
+[15:47:43.587] Finished typings discovery: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/euki/Disciplines/marketX/my-notes-clone/components/bower_components","/home/euki/Disciplines/marketX/my-notes-clone/components/node_modules"]}
+[15:47:43.587] DirectoryWatcher:: Added:: WatchInfo: /home/euki/Disciplines/marketX/my-notes-clone/components/bower_components
+[15:47:43.587] Unhandled exception: Error: ENOENT: no such file or directory, uv_cwd at Error: ENOENT: no such file or directory, uv_cwd
+    at process.wrappedCwd [as cwd] (node:internal/bootstrap/switches/does_own_process_state:126:28)
+    at /home/euki/.fnm/node-versions/v16.3.0/installation/lib/node_modules/typescript/lib/typingsInstaller.js:7280:79
+    at Object.getCurrentDirectory (/home/euki/.fnm/node-versions/v16.3.0/installation/lib/node_modules/typescript/lib/typingsInstaller.js:1576:25)
+    at Object.watchDirectory (/home/euki/.fnm/node-versions/v16.3.0/installation/lib/node_modules/typescript/lib/typingsInstaller.js:112741:324)
+    at createProjectWatcher (/home/euki/.fnm/node-versions/v16.3.0/installation/lib/node_modules/typescript/lib/typingsInstaller.js:123148:48)
+    at NodeTypingsInstaller.TypingsInstaller.watchFiles (/home/euki/.fnm/node-versions/v16.3.0/installation/lib/node_modules/typescript/lib/typingsInstaller.js:123182:33)
+    at NodeTypingsInstaller.TypingsInstaller.install (/home/euki/.fnm/node-versions/v16.3.0/installation/lib/node_modules/typescript/lib/typingsInstaller.js:122894:26)
+    at process.<anonymous> (/home/euki/.fnm/node-versions/v16.3.0/installation/lib/node_modules/typescript/lib/typingsInstaller.js:123349:39)
+    at process.emit (node:events:394:28)
+    at emit (node:internal/child_process:920:12)
+[15:47:43.587] Got install request {"projectName":"/dev/null/inferredProject7*","fileNames":[],"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":[],"projectRootPath":"/home/euki/Disciplines/marketX/my-notes-clone/components","kind":"discover"}
+[15:47:43.587] Explicitly included types: []
+[15:47:43.587] Inferred typings from unresolved imports: []
+[15:47:43.587] Result: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/euki/Disciplines/marketX/my-notes-clone/components/bower_components","/home/euki/Disciplines/marketX/my-notes-clone/components/node_modules"]}
+[15:47:43.587] Finished typings discovery: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/euki/Disciplines/marketX/my-notes-clone/components/bower_components","/home/euki/Disciplines/marketX/my-notes-clone/components/node_modules"]}
+[15:47:43.587] DirectoryWatcher:: Added:: WatchInfo: /home/euki/Disciplines/marketX/my-notes-clone/components/bower_components
+[15:47:43.587] Unhandled exception: Error: ENOENT: no such file or directory, uv_cwd at Error: ENOENT: no such file or directory, uv_cwd
+    at process.wrappedCwd [as cwd] (node:internal/bootstrap/switches/does_own_process_state:126:28)
+    at /home/euki/.fnm/node-versions/v16.3.0/installation/lib/node_modules/typescript/lib/typingsInstaller.js:7280:79
+    at Object.getCurrentDirectory (/home/euki/.fnm/node-versions/v16.3.0/installation/lib/node_modules/typescript/lib/typingsInstaller.js:1576:25)
+    at Object.watchDirectory (/home/euki/.fnm/node-versions/v16.3.0/installation/lib/node_modules/typescript/lib/typingsInstaller.js:112741:324)
+    at createProjectWatcher (/home/euki/.fnm/node-versions/v16.3.0/installation/lib/node_modules/typescript/lib/typingsInstaller.js:123148:48)
+    at NodeTypingsInstaller.TypingsInstaller.watchFiles (/home/euki/.fnm/node-versions/v16.3.0/installation/lib/node_modules/typescript/lib/typingsInstaller.js:123182:33)
+    at NodeTypingsInstaller.TypingsInstaller.install (/home/euki/.fnm/node-versions/v16.3.0/installation/lib/node_modules/typescript/lib/typingsInstaller.js:122894:26)
+    at process.<anonymous> (/home/euki/.fnm/node-versions/v16.3.0/installation/lib/node_modules/typescript/lib/typingsInstaller.js:123349:39)
+    at process.emit (node:events:394:28)
+    at emit (node:internal/child_process:920:12)
+[15:47:43.587] Got install request {"projectName":"/dev/null/inferredProject8*","fileNames":[],"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":[],"projectRootPath":"/home/euki/Disciplines/marketX/my-notes-clone/db","kind":"discover"}
+[15:47:43.587] Explicitly included types: []
+[15:47:43.587] Inferred typings from unresolved imports: []
+[15:47:43.588] Result: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/euki/Disciplines/marketX/my-notes-clone/db/bower_components","/home/euki/Disciplines/marketX/my-notes-clone/db/node_modules"]}
+[15:47:43.588] Finished typings discovery: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/euki/Disciplines/marketX/my-notes-clone/db/bower_components","/home/euki/Disciplines/marketX/my-notes-clone/db/node_modules"]}
+[15:47:43.588] DirectoryWatcher:: Added:: WatchInfo: /home/euki/Disciplines/marketX/my-notes-clone/db/bower_components
+[15:47:43.588] Unhandled exception: Error: ENOENT: no such file or directory, uv_cwd at Error: ENOENT: no such file or directory, uv_cwd
+    at process.wrappedCwd [as cwd] (node:internal/bootstrap/switches/does_own_process_state:126:28)
+    at /home/euki/.fnm/node-versions/v16.3.0/installation/lib/node_modules/typescript/lib/typingsInstaller.js:7280:79
+    at Object.getCurrentDirectory (/home/euki/.fnm/node-versions/v16.3.0/installation/lib/node_modules/typescript/lib/typingsInstaller.js:1576:25)
+    at Object.watchDirectory (/home/euki/.fnm/node-versions/v16.3.0/installation/lib/node_modules/typescript/lib/typingsInstaller.js:112741:324)
+    at createProjectWatcher (/home/euki/.fnm/node-versions/v16.3.0/installation/lib/node_modules/typescript/lib/typingsInstaller.js:123148:48)
+    at NodeTypingsInstaller.TypingsInstaller.watchFiles (/home/euki/.fnm/node-versions/v16.3.0/installation/lib/node_modules/typescript/lib/typingsInstaller.js:123182:33)
+    at NodeTypingsInstaller.TypingsInstaller.install (/home/euki/.fnm/node-versions/v16.3.0/installation/lib/node_modules/typescript/lib/typingsInstaller.js:122894:26)
+    at process.<anonymous> (/home/euki/.fnm/node-versions/v16.3.0/installation/lib/node_modules/typescript/lib/typingsInstaller.js:123349:39)
+    at process.emit (node:events:394:28)
+    at emit (node:internal/child_process:920:12)

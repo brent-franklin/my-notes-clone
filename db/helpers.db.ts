@@ -58,5 +58,5 @@ export const deleteNoteDB = async (deletedNote: NoteType) => {
       note: deletedNote,
     }),
   }).then((note) => note.json());
-    return noteHelper(note.deletedNote);
+    return
 };
