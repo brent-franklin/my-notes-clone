@@ -8,7 +8,7 @@
 
 #noteFormClose{
   height: calc(100% - 100px);
-  width: calc(100% / 3 * 2);
+  width: calc(100%);
   padding: 10px;
   border: none;
 }
@@ -23,11 +23,10 @@
 
 #noteHeaderClose {
   display: flex;
-  width: 200px;
-  align-items: center;
+  width: calc(100%/3*2);
   flex-direction: column;
+  align-items: center;
   color: #c3c3c3;
-  transform: translateX(calc(100%/3 + 200px));
 }
 
 #noteHeader time {
