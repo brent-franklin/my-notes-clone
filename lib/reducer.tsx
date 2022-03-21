@@ -23,7 +23,6 @@ export const emptyNote: NoteType = {
 // This function handles the state of the application
 // All dispatch function calls are handled here
 export const reducer = (state: ReducedType, action: ActionType): ReducedType => {
-    
   // Destructure type and payload for easier use
   const { type, payload } = action;
 
@@ -34,12 +33,10 @@ export const reducer = (state: ReducedType, action: ActionType): ReducedType => 
         (n: NoteType) => n.folderName === payload.newFolder
       );
       return { ...state, selectedFolder: payload.newFolder, selectedNote: folderSelectNote[0] };
-	  
 
     // Add the folder from that was already added to DB
     case ACTION.CREATE_FOLDER:
       return { ...state, folders: payload.newFolder };
-
 
     // Change selected note depending on payload
     case ACTION.CHANGE_SELECTED_NOTE:
@@ -47,7 +44,6 @@ export const reducer = (state: ReducedType, action: ActionType): ReducedType => 
       const changedNote = note === undefined ? state.emptyNote : note;
       return { ...state, selectedNote: changedNote };
 
-	  
     // This allows the noteCard to update with the TextArea as the user types
     case ACTION.READ_NOTE:
       const id = payload.selectedNote.id;
@@ -64,18 +60,16 @@ export const reducer = (state: ReducedType, action: ActionType): ReducedType => 
       const addEdited = state.edited.includes(id) ? state.edited : [...state.edited, id];
       return { ...state, notes: newNoteList, edited: addEdited };
 
-	  
     // Add the new note to the list of notes that was already added to DB
     case ACTION.CREATE_NOTE:
       const newNote = payload.newNote[0];
       const newNotes = payload.newNote.concat(state.notes);
       return { ...state, notes: newNotes, emptyNote: emptyNote, selectedNote: newNote };
 
-	  
     // Filter out the note that matches the updated note.id
     // Then replace it with the updated note
     case ACTION.UPDATE_NOTE:
-      const updatedNote = payload.updatedNote[0]
+      const updatedNote = payload.updatedNote[0];
       const filteredNoteList = state.notes.filter((n) => n.id !== updatedNote.id);
       const updatedNoteList = [updatedNote, ...filteredNoteList];
       const newEdited = state.edited.filter((e) => e !== updatedNote.id);
@@ -84,21 +78,18 @@ export const reducer = (state: ReducedType, action: ActionType): ReducedType => 
         notes: updatedNoteList,
         edited: newEdited,
       };
-	  
 
     // Filter out the note that was deleted from DB and return notes
     case ACTION.DELETE_NOTE:
-	  console.log(state.selectedNote); 
       const deleteNote = async () => await deleteNoteDB(state.selectedNote);
       deleteNote();
-	  if(state.selectedNote.id !== null){
-	    const deletedNoteList = state.notes.filter((n) => n.id !== state.selectedNote.id);
-	    const selectedAfterDelete = !deletedNoteList.length ? state.emptyNote : deletedNoteList[0];
-	    return { ...state, notes: deletedNoteList, selectedNote: selectedAfterDelete };
-	  } else {
-	  console.log(state.selectedNote.id)
-	  return {...state, selectedNote: emptyNote}
-	  }
+      if (state.selectedNote.id !== null) {
+        const deletedNoteList = state.notes.filter((n) => n.id !== state.selectedNote.id);
+        const selectedAfterDelete = !deletedNoteList.length ? state.emptyNote : deletedNoteList[0];
+        return { ...state, notes: deletedNoteList, selectedNote: selectedAfterDelete };
+      } else {
+        return { ...state, selectedNote: emptyNote };
+      }
 
     default:
       return state;
