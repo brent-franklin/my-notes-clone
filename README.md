@@ -38,7 +38,7 @@ Then set the environment variables for PostgreSQL and the URL for the API
 
 [user] is your personal username for your PostgreSQL instance
 
-[passowrd] is your personal password for your PostgreSQL instance
+[password] is your personal password for your PostgreSQL instance
 
 Also, if you have changed the port that PostgreSQL runs on please subsitute the port number below
 for your chosen port number, otherwise it should default to 5432
