@@ -1,8 +1,97 @@
-.frame {
+/* Close Folder Section */
+.frameClose {
   background-color: #fafafa;
-  flex: 1;
+  position: absolute;
 }
 
+.frameClose:nth-child(1){
+  width: calc(100%/3);
+  left: 0;
+}
+
+.frameClose:nth-child(2){
+  width: calc(100%/2);
+  left: calc(100%/3);
+  border-left: 1px solid #c3c3c3;
+  animation: open-one 250ms ease-in-out forwards;
+}
+
+.frameClose:nth-child(3){
+  width: calc(100%/2);
+  left: calc(100%/3*2);
+  border-left: 1px solid #c3c3c3;
+  height: 100%;
+  animation: open-two 250ms ease-in-out forwards;
+}
+
+@keyframes open-one {
+  0%{
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-100%/3*2));
+  }
+}
+
+@keyframes open-two {
+  0%{
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-100%/3));
+  }
+}
+
+/* Open Folder Section */
+
+.frameOpen {
+  background-color: #fafafa;
+  position: absolute;
+}
+
+.frameOpen:nth-child(1){
+  width: calc(100%/3);
+  left: 0;
+}
+
+.frameOpen:nth-child(2){
+  width: calc(100%/2);
+  left: calc(100%/3);
+  border-left: 1px solid #c3c3c3;
+  animation: close-one 250ms ease-in-out forwards;
+}
+
+.frameOpen:nth-child(3){
+  width: calc(100%/2);
+  left: calc(100%/3*2);
+  border-left: 1px solid #c3c3c3;
+  height: 100%;
+  animation: close-two 250ms ease-in-out forwards;
+}
+
+@keyframes close-one {
+  0%{
+    transform: translateX(calc(-100%/2));
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes close-two {
+  0%{
+    transform: translateX(calc(-100%/3));
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Folder Frame Styling */
 
 .folders {
   height: 100%;
@@ -32,6 +121,9 @@
   margin: 0;
 }
 
+/* Note Frame stlying */
+
+
 #notes {
   display: flex;
   height: 100%;
@@ -40,11 +132,10 @@
   overflow-y: auto;
 }
 
+/* Text Area styling */
+
 #note textarea {
   height: calc(100% - 100px);
 }
 
-#hidden {
-  display: none;
-}
 

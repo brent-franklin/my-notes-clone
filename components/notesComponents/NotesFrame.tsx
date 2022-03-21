@@ -35,8 +35,11 @@ const NotesFrame = ({
   // Combine searchedNotes and empty note to display on screen together
   const mainNoteList = [emptyNote, ...searchNotes()];
 
+  // If utilities.toggleFolders is false then hide the folder panel
+  const toggle: string = !utilities.toggleFolders ? styles.frameClose : styles.frameOpen;
+
   return (
-    <section id={styles[section]} className={styles.frame}>
+    <section id={styles[section]} className={toggle}>
       {mainNoteList
         .filter((n: NoteType) => n.folderName === selectedFolder || n.folderName === '')
         .map((n: NoteType, i: number) => {

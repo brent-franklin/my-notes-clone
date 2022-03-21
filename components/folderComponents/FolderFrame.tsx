@@ -40,10 +40,10 @@ const FolderFrame = ({
   };
 
   // If utilities.toggleFolders is false then hide the folder panel
-  const toggle: string | undefined = !utilities.toggleFolders ? styles.hidden : undefined;
-
+  const toggle: string = !utilities.toggleFolders ? styles.frameClose : styles.frameOpen;
+    
   return (
-    <section id={toggle} className={`${styles[section]} ${styles.frame}`}>
+      <section className={`${styles[section]} ${toggle}`}>
       <h1>iCloud</h1>
       <ul>
         {folders.map((f: FolderType) => (
