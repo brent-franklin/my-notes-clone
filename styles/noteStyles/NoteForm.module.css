@@ -8,7 +8,7 @@
 
 #noteFormClose{
   height: calc(100% - 100px);
-  width: calc(100%);
+  width: calc(100%/3*2);
   padding: 10px;
   border: none;
 }
