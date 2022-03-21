@@ -4,6 +4,7 @@ import fuzzySearch from '@/lib/fuzzySearch';
 import { UtilityContext } from '@/lib/utilityContext';
 import { ReducerContext } from '@/components/NotesApp';
 import NoteCard from './NoteCard';
+import { ACTION } from '@/lib/reducer';
 
 const NotesFrame = ({
   section,
@@ -15,7 +16,7 @@ const NotesFrame = ({
   // This section allows access to the reducer variables
   // notes = NoteType[], emptyNote = NoteType[]
   const reducedContext = useContext(ReducerContext);
-  const { notes, emptyNote, selectedFolder } = reducedContext as ReducedType;
+  const { notes, emptyNote, selectedFolder, selectedNote } = reducedContext as ReducedType;
   //This seciton allows access to the utilitybar variables
   /*
       {toggleFolders: boolean,
@@ -37,6 +38,7 @@ const NotesFrame = ({
   const mainNoteList = [emptyNote, ...searchNotes()].filter(
     (n: NoteType) => n.folderName === selectedFolder || n.folderName === ''
   );
+  const oneNote = mainNoteList.length === 1 ? true : false;
 
   // If utilities.toggleFolders is false then hide the folder panel
   const toggle: string = !utilities.toggleFolders ? styles.frameClose : styles.frameOpen;
@@ -50,7 +52,7 @@ const NotesFrame = ({
             key={n.timeCreated ?? 'newNote'}
             note={n}
             dispatch={dispatch}
-            oneNote={mainNoteList}
+            oneNote={oneNote}
           />
         );
       })}
