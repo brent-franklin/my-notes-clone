@@ -37,9 +37,9 @@ const Home: NextPage<{ folders: FolderType[]; notes: NoteType[] }> = ({
 export const getServerSideProps: GetServerSideProps = async (
   _context: GetServerSidePropsContext
 ) => {
-  const folderRes: Response = await fetch(`${process.env.NOTES_URL}/api/folders` as string);
+  const folderRes: Response = await fetch(`${process.env.NOTES_URL}api/folders` as string);
   const folders = await folderRes.json().then((folder) => folder.folders);
-  const notesRes: Response = await fetch(`${process.env.NOTES_URL}/api/notes` as string);
+  const notesRes: Response = await fetch(`${process.env.NOTES_URL}api/notes` as string);
   const n = await notesRes.json().then((note) => note.notes);
   const notes = noteHelper(n);
 
