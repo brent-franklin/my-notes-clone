@@ -13,29 +13,30 @@
   border: none;
 }
 
-#noteHeaderOpen {
-  display: flex;
+#noteHeaderOpen,
+#noteHeaderClose{
   width: 100%;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
   color: #c3c3c3;
 }
 
-#noteHeaderClose {
-  display: flex;
+#noteHeaderOpen time, 
+#noteHeaderOpen span {
+  display: block;
+  width: 100%;
+}
+
+#noteHeaderClose time, 
+#noteHeaderClose span {
+  display: block;
   width: calc(100%/3*2);
-  flex-direction: column;
-  align-items: center;
-  color: #c3c3c3;
 }
 
 #noteHeader time {
   font-weight: bold;
-  color: #c3c3c3;
 }
 
 #noteHeader span {
   font-size: 0.9rem;
   font-weight: bold;
-  color: #c3c3c3;
 }
